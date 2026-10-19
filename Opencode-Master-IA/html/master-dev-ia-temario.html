@@ -1,0 +1,1720 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Máster en Desarrollo con IA - Temario Completo con Contenido Web Investigado</title>
+  <style>
+    :root {
+      --primary: #6c5ce7;
+      --primary-dark: #5a4ad;
+      --secondary: #00cec9;
+      --success: #00b894;
+      --warning: #f6c141;
+      --error: #e76f51;
+      --light: #f8f9fa;
+      --dark: #212529;
+      --text: #333;
+      --text-light: #666;
+      --bg-accent: #e9ecef;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      line-height: 1.6;
+      color: var(--text);
+      background: var(--light);
+      margin: 0;
+      padding: 20px;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    h1, h2, h3 {
+      color: var(--dark);
+    }
+
+    h1 {
+      text-align: center;
+      color: var(--primary);
+      margin-bottom: 30px;
+      padding-bottom: 20px;
+      border-bottom: 4px solid var(--primary);
+    }
+
+    h2 {
+      color: var(--primary);
+      border-left: 4px solid var(--primary);
+      padding-left: 15px;
+      margin-top: 40px;
+    }
+
+    h3 {
+      color: var(--secondary);
+      margin-top: 30px;
+    }
+
+    .card {
+      background: white;
+      border-radius: 8px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+      margin-bottom: 30px;
+      overflow: hidden;
+    }
+
+    .card-header {
+      background: var(--primary);
+      color: white;
+      padding: 20px;
+    }
+
+    .card-header h3 {
+      margin: 0;
+      font-size: 1.2rem;
+    }
+
+    .card-body {
+      padding: 30px;
+    }
+
+    .tag {
+      display: inline-block;
+      background: #e9ecef;
+      padding: 2px 8px;
+      border-radius: 4px;
+      font-size: 0.85rem;
+      margin-right: 5px;
+      margin-bottom: 5px;
+    }
+
+    .section {
+      margin-bottom: 40px;
+    }
+
+    .topic {
+      margin-bottom: 30px;
+      padding: 20px;
+      border: 1px solid #eee;
+      border-radius: 6px;
+      transition: border-color 0.3s;
+    }
+
+    .topic:hover {
+      border-color: var(--primary);
+    }
+
+    .topic h4 {
+      margin-top: 0;
+      color: var(--primary);
+    }
+
+    .topic p {
+      color: var(--text-light);
+      margin-bottom: 15px;
+      font-size: 0.95rem;
+    }
+
+    .objectives {
+      background: #f8f9fa;
+      padding: 15px;
+      border-radius: 4px;
+      margin: 15px 0;
+      border-left: 3px solid var(--secondary);
+    }
+
+    .objectives h5 {
+      margin-top: 0;
+      color: var(--dark);
+      font-size: 0.9rem;
+    }
+
+    .objectives ul {
+      margin: 0;
+      padding-left: 20px;
+    }
+
+    .objectives li {
+      margin-bottom: 5px;
+      line-height: 1.4;
+    }
+
+    .exam {
+      margin-top: 30px;
+      padding: 25px;
+      background: white;
+      border: 1px solid #eee;
+      border-radius: 6px;
+    }
+
+    .exam h5 {
+      margin-top: 0;
+      color: var(--error);
+    }
+
+    .exam p {
+      color: var(--text-light);
+      margin-bottom: 20px;
+    }
+
+    .questions {
+      display: grid;
+      gap: 15px;
+    }
+
+    .question {
+      background: #f8f9fa;
+      border: 1px solid #e2e6ea;
+      border-radius: 6px;
+      padding: 20px;
+    }
+
+    .question h6 {
+      margin: 0 0 10px 0;
+      color: var(--dark);
+      font-size: 0.95rem;
+    }
+
+    .question label {
+      display: block;
+      margin-bottom: 8px;
+      cursor: pointer;
+    }
+
+    .question input[type="radio"] {
+      margin-right: 8px;
+      transform: scale(0.8);
+      vertical-align: middle;
+    }
+
+    .btn {
+      display: inline-block;
+      background: var(--primary);
+      color: white;
+      padding: 12px 24px;
+      border-radius: 4px;
+      text-decoration: none;
+      font-weight: bold;
+      text-align: center;
+      margin: 10px 0;
+      transition: background 0.3s;
+    }
+
+    .btn:hover {
+      background: var(--primary-dark);
+    }
+
+    .progress {
+      height: 8px;
+      background: #e2e6ea;
+      border-radius: 4px;
+      overflow: hidden;
+      margin: 10px 0;
+    }
+
+    .progress-bar {
+      height: 100%;
+      background: var(--primary);
+      width: 0%;
+      transition: width 0.3s ease;
+    }
+
+    .source-note {
+      font-size: 0.75rem;
+      color: var(--text-light);
+      font-style: italic;
+      margin-top: 10px;
+    }
+
+    @media (max-width: 768px) {
+      .container {
+        padding: 10px;
+      }
+
+      .card-body {
+        padding: 20px;
+      }
+
+      .question {
+        padding: 15px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Máster en Desarrollo con IA</h1>
+    <p class="text-center text-muted" style="font-size: 1.2rem;">Plan de estudios completo con contenido real de la web investigado y exámenes por tema</p>
+    <p class="text-center text-secondary small">Información respaldada por fuentes oficiales y roadmaps de la industria</p>
+
+    <!-- FASE 1: Fundamentos -->
+    <div class="card">
+      <div class="card-header">
+        <h3>FASE 1: Fundamentos del Desarrollo de Software</h3>
+      </div>
+      <div class="card-body">
+        <div class="section">
+          <!-- Tema 1 -->
+          <div class="topic">
+            <h4>Pensamiento Computacional y Resolución de Problemas</h4>
+            <p>Habilidad fundamental para todo desarrollador que consiste en descomponer problemas complejos en partes más pequeñas, reconocer patrones y diseñar soluciones algorítmicas. Es el puente entre el problema real y su solución programática.</p>
+            <div class="objectives">
+              <h5>Deberías saber (basado en fuentes ISTE, MIT, LibreTexts, DEV Community):</h5>
+              <ul>
+                <li>Definición oficial: "Pensamiento involucrado en formular problemas cuyas soluciones pueden representarse como pasos computacionales y algoritmos" (Jeannette Wing, Columbia University) - citado por ISTE y ACM</li>
+                <li>Cuatro técnicas fundamentales: Decomposición, Reconocimiento de patrones, Abstracción, Diseño de algoritmos</li>
+                <li>Aplicar divide y conquistar para resolver problemas complejos</li>
+                <li>Validar casos borde y casos de entrada</li>
+                <li>Diferenciar entre pensar en binario vs pensamiento computacional significativo</li>
+                <li>Computational thinking transcends mere programming - no equivale a pensar en binario, ya que las computadoras carecen de capacidad de pensamiento</li>
+              </ul>
+            </div>
+            <div class="exam">
+              <h5>Examen: Pensamiento Computacional</h5>
+              <p>Responde las siguientes preguntas:</p>
+              <div class="questions">
+                <div class="question">
+                  <h6>1. ¿Cuál es la definición oficial de pensamiento computacional según Jeannette Wing?</h6>
+                  <label><input type="radio" name="q1" value="a"> A) Pensar en binario y códigos</label>
+                  <label><input type="radio" name="q1" value="b"> B) Formular problemas cuyas soluciones pueden representarse como pasos computacionales y algoritmos</label>
+                  <label><input type="radio" name="q1" value="c"> C) Programar en múltiples lenguajes</label>
+                </div>
+                <div class="question">
+                  <h6>2. ¿Cuáles son las cuatro técnicas fundamentales del pensamiento computacional?</h6>
+                  <label><input type="radio" name="q2" value="a"> A) Decomposición, reconocimiento de patrones, abstracción, diseño de algoritmos</label>
+                  <label><input type="radio" name="q2" value="b"> A) Variables, bucles, funciones, clases</label>
+                  <label><input type="radio" name="q2" value="c"> C) HTML, CSS, JavaScript, Python</label>
+                </div>
+                <div class="question">
+                  <h6>3. ¿Quién definió el pensamiento computacional como "el pensamiento involucrado en formular problemas cuyas soluciones pueden representarse como pasos computacionales y algoritmos"?</h6>
+                  <label><input type="radio" name="q3" value="a"> A) Jeannette Wing</label>
+                  <label><input type="radio" name="q3" value="b"> B) MIT Faculty</label>
+                  <label><input type="radio" name="q3" value="c"> C) Google AI</label>
+                </div>
+                <div class="question">
+                  <h6>4. ¿El pensamiento computacional equivale a pensar en binario?</h6>
+                  <label><input type="radio" name="q4" value="a"> A) Sí, es pensar en binario</label>
+                  <label><input type="radio" name="q4" value="b"> B) No, no equivale - las computadoras carecen de capacidad de pensamiento</label>
+                  <label><input type="radio" name="q4" value="c"> C) Solo en ciertos casos</label>
+                </div>
+              </div>
+              <p class="source-note">Fuente: MIT Schwarzman College of Computing, Engineering LibreTexts, International Society for Technology in Education (ISTE), Definition of Computational Thinking PDF</p>
+            </div>
+          </div>
+
+          <!-- Tema 2 -->
+          <div class="topic">
+            <h4>Ecosistema de Desarrollo de Software Moderno</h4>
+            <p>Entorno completo de herramientas y tecnologías que los desarrolladores utilizan para crear, probar y desplegar software. Incluye terminal, control de versiones, IDEs, frameworks y plataformas de nube. El ecosistema típicamente incluye: IDE, control de versiones, integración continua, despliegue, monitoreo.</p>
+            <div class="objectives">
+              <h5>Deberías saber (basado en roadmap.sh, GitHub Projects, IEEE Software Engineering):</h5>
+              <ul>
+                <li>Diferencia entre herramientas locales (VS Code, Git) vs herramientas en la nube (GitHub Actions, AWS Cloud, Azure DevOps)</li>
+                <li>Importancia de la interoperabilidad entre herramientas en flujos de trabajo modernos (CI/CD pipelines)</li>
+                <li>El ecosistema típicamente incluye: IDE, control de versiones, integración continua, despliegue, monitoreo, gestión de dependencias</li>
+                <li>Cómo las APIs modernas conectan diferentes herramientas en un ecosistema unificado mediante webhooks y integraciones</li>
+                <li>La importancia de la documentación del ecosistema y los estándares de integración (OpenAPI, GraphQL)</li>
+              </ul>
+            </div>
+            <div class="exam">
+              <h5>Examen: Ecosistema de Desarrollo de Software Moderno</h5>
+              <p>Responde las siguientes preguntas:</p>
+              <div class="questions">
+                <div class="question">
+                  <h6>1. ¿Cuál es la diferencia principal entre herramientas locales y herramientas en la nube en un ecosistema de desarrollo moderno?</h6>
+                  <label><input type="radio" name="q1" value="a"> A) Las herramientas locales son más seguras</label>
+                  <label><input type="radio" name="q1" value="b"> B) Las herramientas en la nube ofrecen interoperabilidad y CI/CD pipelines integrados</label>
+                  <label><input type="radio" name="q1" value="c"> C) Las herramientas locales no requieren conexión a internet</label>
+                </div>
+                <div class="question">
+                  <h6>2. ¿Cuál de los siguientes NO es típicamente parte del ecosistema de desarrollo de software?</h6>
+                  <label><input type="radio" name="q2" value="a"> A) IDE</label>
+                  <label><input type="radio" name="q2" value="b"> B) Control de versiones (Git)</label>
+                  <label><input type="radio" name="q2" value="c"> C) Procesador de textos</label>
+                </div>
+                <div class="question">
+                  <h6>3. ¿Qué significa CI/CD en el contexto del ecosistema de desarrollo?</h6>
+                  <label><input type="radio" name="q3" value="a"> A) Continuous Integration / Continuous Deployment</label>
+                  <label><input type="radio" name="q3" value="b"> B) Cloud Infrastructure / Cloud Deployment</label>
+                  <label><input type="radio" name="q3" value="c"> C) Code Inspection / Code Documentation</label>
+                </div>
+                <div class="question">
+                  <h6>4. ¿Cómo conectan las APIs modernas diferentes herramientas en un ecosistema unificado?</h6>
+                  <label><input type="radio" name="q4" value="a"> A) A través de webhooks y integraciones</label>
+                  <label><input type="radio" name="q4" value="b"> B) Reemplazando todas las herramientas por una sola</label>
+                  <label><input type="radio" name="q4" value="c"> C) No conectan, funcionan de forma independiente</label>
+                </div>
+                <div class="question">
+                  <h6>5. ¿Cuál es la importancia de los estándares de integración como OpenAPI y GraphQL en el ecosistema?</h6>
+                  <label><input type="radio" name="q5" value="a"> A) Permiten la comunicación estandarizada entre diferentes herramientas y servicios</label>
+                  <label><input type="radio" name="q5" value="b"> B) Solo son útiles para documentación</label>
+                  <label><input type="radio" name="q5" value="c"> C) Son obligatorios para todos los proyectos</label>
+                </div>
+              </div>
+              <p class="source-note">Fuente: roadmap.sh, GitHub Projects, IEEE Software Engineering</p>
+            </div>
+          <div class="topic">
+            <h4>Fundamentos de la Programación</h4>
+            <p>Conceptos universales que se aplican a casi cualquier lenguaje de programación: variables, tipos de datos, estructuras de control, funciones, modulación de errores. Estos conceptos son paradigmáticos y no lenguaje-específicos. Un programa es una secuencia de instrucciones que el computador sigue para realizar una tarea.</p>
+            <div class="objectives">
+              <h5>Deberías saber (basado en DEV Community guides, OpenStax, Scaler, IEEE Computer Society):</h5>
+              <ul>
+                <li>Declaración de variables con let, const, var y sus diferencias de scope (scope chain, hoisting, temporal dead zone)</li>
+                <li>Tipos de datos primitivos vs estructurados: numbers, strings, booleans, arrays, objects, null, undefined, symbol, bigint</li>
+                <li>Estructuras de control: if/else, switch, bucles for/while/do-while con sus casos de uso y flujos de ejecución</li>
+                <li>Creación y uso de funciones: parámetros, retorno, scope (local vs global), closure, llamada por valor vs referencia, inmediatamente invocada función IIFE</li>
+                <li>Manejo básico de errores: try/catch en lenguajes modernos, patrones de error handling (error first callback, promises .catch(), try/async-await)</li>
+                <li>Principio DRY (Don't Repeat Yourself) y escritura de código limpio: funciones pequeñas, nombre descriptivo, sin duplicación</li>
+                <li>Comentarios: propósito vs implementación, comentar el "por qué" no el "qué", comentarios significativos</li>
+              </ul>
+            </div>
+            <div class="exam">
+              <h5>Examen: Fundamentos de la Programación</h5>
+              <p>Responde las siguientes preguntas:</p>
+              <div class="questions">
+                <div class="question">
+                  <h6>1. ¿Cuál es la diferencia principal entre let, const y var en JavaScript?</h6>
+                  <label><input type="radio" name="q1" value="a"> A) Let y const tienen bloque scope, var tiene función scope</label>
+                  <label><input type="radio" name="q1" value="b"> B) Const es mutable, let y var son inmutables</label>
+                  <label><input type="radio" name="q1" value="c"> C) No hay diferencia, son intercambiables</label>
+                </div>
+                <div class="question">
+                  <h6>2. ¿Qué es el "hoisting" en JavaScript?</h6>
+                  <label><input type="radio" name="q2" value="a"> A) Elevar declaraciones al inicio del scope</label>
+                  <label><input type="radio" name="q2" value="b"> B) Mover código al final del archivo</label>
+                  <label><input type="radio" name="q2" value="c"> C) Una técnica de optimización de rendimiento</label>
+                </div>
+                <div class="question">
+                  <h6>3. ¿Cuál de los siguientes es un tipo de dato estructurado?</h6>
+                  <label><input type="radio" name="q3" value="a"> number</label>
+                  <label><input type="radio" name="q3" value="b"> boolean</label>
+                  <label><input type="radio" name="q3" value="c"> array</label>
+                </div>
+                <div class="question">
+                  <h6>4. ¿Qué es un "closure" en programación?</h6>
+                  <label><input type="radio" name="q4" value="a"> A) Una función que recuerda su scope léxico</label>
+                  <label><input type="radio" name="q4" value="b"> B) Un error de cierre de archivo</label>
+                  <label><input type="radio" name="q4" value="c"> C) Un patrón de diseño de bases de datos</label>
+                </div>
+                <div class="question">
+                  <h6>5. ¿Cuál es el principio DRY y por qué es importante?</h6>
+                  <label><input type="radio" name="q5" value="a"> A) Don't Repeat Yourself - evitar duplicación de código</label>
+                  <label><input type="radio" name="q5" value="b"> "Draw Your own" - diseñar tu propia lógica</label>
+                  <label><input type="radio" name="q5" value="c"> C) Una herramienta de testing automático</label>
+                </div>
+              </div>
+              <p class="source-note">Fuente: DEV Community programming guides, OpenStax Introduction to Computer Science, Scaler ML Engineer Roadmap, IEEE Computer Society</p>
+            </div>
+          <div class="topic">
+            <h4>Introducción a los Lenguajes de Programación</h4>
+            <p>Exploración de paradigmas de programación y cómo diferentes lenguajes soportan diferentes estilos. Comprensión de POO, programación funcional, asincronía y modularidad. La elección del lenguaje depende del proyecto y dominio. Los lenguajes pueden ser multiparadigma y no se limitan a un solo paradigma.</p>
+            <div class="objectives">
+              <h5>Deberías saber (basado en Roadmap.sh, GitHub Roadmaps, CIS-Team roadmaps, ACM Curriculum):</h5>
+              <ul>
+                <li>Paradigmas principales: Imperativo (secuencia, control, estado), Declarativo (qué hacer, no cómo), Orientado a Objetos (OOP), Funcional, Lógico, Visual</li>
+                <li>Principios OOP: Encapsulamiento (ocultamiento de información), Herencia (herencia de clase, herencia prototípica), Polimorfismo (polimorfismo subtipo, ad-hoc, parametric), Abstracción - los 4 pilares fundamentales</li>
+                <li>Programación funcional: funciones de primera clase, map/filter/reduce/reduceRight, inmutabilidad, pure functions, higher-order functions, currying, composición de funciones</li>
+                <li>Programación asíncrona: callbacks, promises, async/await en JavaScript/Python, event loop, task queue, concurrency model</li>
+                <li>Gestión de dependencias: npm, pip, requirements.txt, gestor de versiones y conflictos de versiones, semver (versión semántica)</li>
+                <li>Modularidad y creación de paquetes/reutilización de código, namespaces, módulos, packages</li>
+                <li>Comparación de lenguajes: Python vs JavaScript vs Java vs C++ vs Rust - casos de uso y ecosistemas</li>
+              </ul>
+            </div>
+            <div class="exam">
+              <h5>Examen: Introducción a los Lenguajes de Programación</h5>
+              <p>Responde las siguientes preguntas:</p>
+              <div class="questions">
+                <div class="question">
+                  <h6>1. ¿Cuál de los siguientes es un paradigma imperativo?</h6>
+                  <label><input type="radio" name="q1" value="a"> A) Programación funcional</label>
+                  <label><input type="radio" name="q1" value="b"> B) Programación orientada a objetos</label>
+                  <label><input type="radio" name="q1" value="c"> C) Programación lógica</label>
+                </div>
+                <div class="question">
+                  <h6>2. ¿Qué significa programación declarativa?</h6>
+                  <label><input type="radio" name="q2" value="a"> A) Decir qué hacer, no cómo</label>
+                  <label><input type="radio" name="q2" value="b"> B) Usar solo bucles y condicionales</label>
+                  <label><input type="radio" name="q2" value="c"> C) Programar en lenguaje declarativo</label>
+                </div>
+                <div class="question">
+                  <h6>3. ¿Cuál de los 4 pilares fundamentales de OOP se refiere al ocultamiento de información?</h6>
+                  <label><input type="radio" name="q3" value="a"> A) Herencia</label>
+                  <label><input type="radio" name="q3" value="b"> B) Encapsulamiento</label>
+                  <label><input type="radio" name="q3" value="c"> C) Polimorfismo</label>
+                </div>
+                <div class="question">
+                  <h6>4. ¿Qué son las funciones de primera clase en programación funcional?</h6>
+                  <label><input type="radio" name="q4" value="a"> A) Funciones que pueden asignarse a variables</label>
+                  <label><input type="radio" name="q4" value="b"> B) Funciones que solo pueden llamarse</label>
+                  <label><input type="radio" name="q4" value="c"> C) Funciones que no pueden recibir parámetros</label>
+                </div>
+                <div class="question">
+                  <h6>5. ¿Qué es el "event loop" en programación asíncrona?</h6>
+                  <label><input type="radio" name="q5" value="a"> A) Un bucle que espera eventos y los procesa</label>
+                  <label><input type="radio" name="q5" value="b"> B) Un bucle infinito que nunca termina</label>
+                  <label><input type="radio" name="q5" value="c"> C) Un patrón de diseño para bases de datos</label>
+                </div>
+              </div>
+              <p class="source-note">Fuente: Roadmap.sh, GitHub Roadmaps, CIS-Team roadmaps, ACM Curriculum</p>
+            </div>
+          <div class="topic">
+            <h4>Fundamentos de Sistemas y Redes</h4>
+            <p>Cómo funcionan los sistemas computacionales y las redes que los conectan. Modelo cliente-servidor, protocolos HTTP/HTTPS, direccionamiento IP, DNS, y cómo las aplicaciones comunican a través de redes. Explica cómo las aplicaciones se comunican a través de redes usando modelos de comunicación.</p>
+            <div class="objectives">
+              <h5>Deberías saber (basado en roadmaps de CS, MIT OpenCourseWare, Kurose & Ross, Tanenbaum):</h5>
+              <ul>
+                <li>Modelo cliente-servidor: roles (client vs server), requests/responses, stateless vs stateful communications, load balancers, reverse proxies</li>
+                <li>Protocolo HTTP/HTTPS: métodos (GET, POST, PUT, DELETE, PATCH, HEAD, OPTIONS), códigos de estado (200, 201, 204, 400, 401, 403, 404, 405, 408, 429, 500, 502, 503, 504), headers, caching</li>
+                <li>Dire IP: IPv4 vs IPv6, clases de red (clase A, B, C, D, E), direcciones privadas vs públicas (10.0.0.0/8, 172.16.0.0/12, 192.168.0.0/16), NAT, direccionamiento CIDR</li>
+                <li>DNS: cómo se resuelven los nombres de dominio a direcciones IP, resolvers, caching recursivo vs iterativo, registros (A, AAAA, CNAME, MX, NS, TXT, SRV)</li>
+                <li>Concepto de API: REST vs GraphQL vs SOAP, endpoints, recursos y representaciones, HTTP methods, status codes, error handling</li>
+                <li>Comunicación entre procesos y sobre redes locales/internet: sockets, TCP/UDP, capas de aplicación, transporte, red</li>
+                <li>Modelo OSI vs TCP/IP: 7 capas vs 4 capas, comparación y diferencias, cuándo usar cada modelo</li>
+              </ul>
+            </div>
+            <div class="exam">
+              <h5>Examen: Fundamentos de Sistemas y Redes</h5>
+              <p>Responde las siguientes preguntas:</p>
+              <div class="questions">
+                <div class="question">
+                  <h6>1. ¿Cuál es la principal diferencia entre el modelo cliente-servidor y las comunicaciones punto-a-punto?</h6>
+                  <label><input type="radio" name="q1" value="a"> A) El modelo cliente-servidor tiene roles definidos (client vs server)</label>
+                  <label><input type="radio" name="q1" value="b"> B) Las comunicaciones punto-a-punto requieren un servidor central</label>
+                  <label><input type="radio" name="q1" value="c"> C) No hay diferencia</label>
+                </div>
+                <div class="question">
+                  <h6>2. ¿Cuál método HTTP se usa para eliminar un recurso?</h6>
+                  <label><input type="radio" name="q2" value="a"> A</label>
+                  <label><input type="radio" name="q2" value="b"> B) DELETE</label>
+                  <label><input type="radio" name="q2" value="c"> C) REMOVE</label>
+                </div>
+                <div class="question">
+                  <h6>3. ¿Qué significa IPv6 frente a IPv4?</h6>
+                  <label><input type="radio" name="q3" value="a"> A) Direcciones más cortas</label>
+                  <label><input type="radio" name="q3" value="b"> B) Espacio de direcciones mucho más amplio</label>
+                  <label><input type="radio" name="q3" value="c"> C) Solo se usa en redes móviles</label>
+                </div>
+                <div class="question">
+                  <h6>4. ¿Cuál es la función principal del DNS?</h6>
+                  <label><input type="radio" name="q4" value="a"> A) Encriptar tráfico web</label>
+                  <label><input type="radio" name="q4" value="b"> B) Resolver nombres de dominio a direcciones IP</label>
+                  <label><input type="radio" name="q4" value="c"> C) Gestionar direcciones IP dinámicas</label>
+                </div>
+                <div class="question">
+                  <h6>5. ¿Cuál es la diferencia entre los modelos OSI y TCP/IP?</h6>
+                  <label><input type="radio" name="q5" value="a"> A) OSI tiene 7 capas, TCP/IP tiene 4 capas</label>
+                  <label><input type="radio" name="q5" value="b"> B) TCP/IP tiene 7 capas, OSI tiene 4 capas</label>
+                  <label><input type="radio" name="q5" value="c"> C) No hay diferencia de capas</label>
+                </div>
+              </div>
+              <p class="source-note">Fuente: roadmaps de CS, MIT OpenCourseWare, Kurose & Ross, Tanenbaum</p>
+            </div>
+          <div class="topic">
+            <h4>Buenas Prácticas</h4>
+            <p>Disciplinas y estándares que aseguran la creación de software de calidad, mantenible y escalable. Incluye código limpio, principios SOLID, testing, debugging, y consideraciones éticas en el desarrollo tecnológico. Las buenas prácticas evolucionan con la industria.</p>
+            <div class="objectives">
+              <h5>Deberías saber (basado en principios industriales, guías SOLID, Clean Code, Code Complete):</h5>
+              <ul>
+                <li>Principios SOLID: Single Responsibility (SRP), Open/Closed (OCP), Liskov Substitution (LSP), Interface Segregation (ISP), Dependency Inversion (DIP) - los 5 principios con ejemplos de código</li>
+                <li>Clean Code: nombres descriptivos, funciones pequeñas (≤ 10-15 líneas), comentarios significativos, indentación consistente, nombrado consistente</li>
+                <li>Debugging: lectura de trazas de error, uso de debuggers (print/console logging estratégico, step-through debugging), REPL debugging</li>
+                <li>Conceptos de testing: unit tests (pruebas unitarias), integration tests (pruebas de integración), E2E tests (pruebas end-to-end), TDD (Desarrollo Orientado a Testes), BDD (Desarrollo Dirigido por Comportamiento)</li>
+                <li>Gestión de deuda técnica: identificar, refactorizar y prevenir acumulación de código problemático, medición de deuda técnica</li>
+                <li>Ética en el desarrollo: privacidad de datos, sesgos algorítmicos, accesibilidad (WCAG), impacto ambiental (carbon footprint del código), responsabilidad social</li>
+<li>Code Review: procesos de revisión de código, feedback constructivo, aprobaciones, checklist de revisión</li>
+              </ul>
+            </div>
+            <div class="exam">
+              <h5>Examen: Buenas Prácticas</h5>
+              <p>Responde las siguientes preguntas:</p>
+              <div class="questions">
+                <div class="question">
+                  <h6>1. ¿Cuál de los siguientes principios SOLID establece que una clase debe tener solo una razón para cambiar?</h6>
+                  <label><input type="radio" name="q1" value="a"> A) Single Responsibility Principle (SRP)</label>
+                  <label><input type="radio" name="q1" value="b"> B) Open/Closed Principle (OCP)</label>
+                  <label><input type="radio" name="q1" value="c"> C) Liskov Substitution Principle (LSP)</label>
+                </div>
+                <div class="question">
+                  <h6>2. ¿Qué significa el principio Open/Closed (OCP)?</h6>
+                  <label><input type="radio" name="q2" value="a"> A) Las clases deben estar abiertas para extensión pero cerradas para modificación</label>
+                  <label><input type="radio" name="q2" value="b"> B) Las clases deben ser siempre abiertas</label>
+                  <label><input type="radio" name="q2" value="c"> C) Las clases deben cerrarse después de creado</label>
+                </div>
+                <div class="question">
+                  <h6>3. ¿Cuál de los siguientes NO es un concepto de testing mencionado?</h6>
+                  <label><input type="radio" name="q3" value="a"> A) Unit tests</label>
+                  <label><input type="radio" name="q3" value="b"> B) Integration tests</label>
+                  <label><input type="radio" name="q3" value="c"> C) Database design</label>
+                </div>
+                <div class="question">
+                  <h6>4. ¿Qué es el "técnical debt" (deuda técnica)?</h6>
+                  <label><input type="radio" name="q4" value="a"> A) Código que funciona perfectamente</label>
+                  <label><input type="radio" name="q4" value="b"> C) El costo de mantenimiento futuro derivado de atajos tomados en el desarrollo</label>
+                </div>
+                <div class="question">
+                  <h6>5. ¿Cuál es uno de los 4 pilares éticos fundamentales en el desarrollo de software?</h6>
+                  <label><input type="radio" name="q5" value="a"> A) Justicia (fairness)</label>
+                  <label><input type="radio" name="q5" value="b"> B) Rentabilidad (profitability)</label>
+                  <label><input type="radio" name="q5" value="c"> C) Velocidad (speed)</label>
+                </div>
+              </div>
+              <p class="source-note">Fuente: principios industriales, guías SOLID, Clean Code, Code Complete</p>
+            </div>
+          <div class="topic">
+            <h4>Proyecto Práctico Inicial</h4>
+            <p>Aplicación práctica donde los estudiantes construyen un proyecto integrador que demuestra dominio de los fundamentos aprendidos. Projects típicos: calculadora, to-do list, portfolio simple, o un sistema de gestión básica. El proyecto debe integrar todos los fundamentos de la Fase 1.</p>
+            <div class="objectives">
+              <ul>
+                <li>Aplicar pensamiento computacional para descomponer el problema del proyecto: descomponer en sub-problemas identificables</li>
+                <li>Utilizar variables, estructuras de control y funciones para construir la lógica del proyecto</li>
+                <li>Implementar una interfaz básica (HTML/CSS/JS o equivalente en tu lenguaje de programación)</li>
+                <li>Utilizar control de versiones (Git) para rastrear cambios desde el inicio del proyecto, commits significativos, mensajes descriptivos</li>
+                <li>Demostrar comprensión del ecosistema de desarrollo completado: uso de herramientas, IDEs, terminal, control de versiones</li>
+                <li>Entregar un proyecto funcional que integre todos los fundamentos de la Fase 1: variables, control flow, functions, basic DOM manipulation, Git versionado</li>
+                <li>Presentar el proyecto: README con descripción, setup instructions, screenshots o demo link</li>
+              </ul>
+            </div>
+            <div class="exam">
+              <h5>Examen: Proyecto Práctico Inicial</h5>
+              <p>Responde las siguientes preguntas:</p>
+              <div class="questions">
+                <div class="question">
+                  <h6>1. ¿Cuál es el propósito principal de un proyecto práctico inicial en el aprendizaje de desarrollo de software?</h6>
+                  <label><input type="radio" name="q1" value="a"> A) Demostrar dominio de los fundamentos aprendidos</label>
+                  <label><input type="radio" name="q1" value="b"> B) Reemplazar el aprendizaje teórico</label>
+                  <label><input type="radio" name="q1" value="c"> C) Only for portfolio purposes</label>
+                </div>
+                <div class="question">
+                  <h6>2. ¿Qué herramientas de control de versiones deberías usar en un proyecto práctico?</h6>
+                  <label><input type="radio" name="q2" value="a"> A) Git</label>
+                  <label><input type="radio" name="q2" value="b"> B) SVN</label>
+                  <label><input type="radio" name="q2" value="c"> C) Google Drive</label>
+                </div>
+                <div class="question">
+                  <h6>3. ¿Qué debe incluir un README para un proyecto práctico?</h6>
+                  <label><input type="radio" name="q3" value="a"> A) Descripción del proyecto, setup instructions, screenshots o demo link</label>
+                  <label><input type="radio" name="q3" value="b"> B) Solo el código fuente</label>
+                  <label><input type="radio" name="q3" value="c"> C) Los secretos del proyecto</label>
+                </div>
+                <div class="question">
+                  <h6>4. ¿Cuál es el beneficio de integrar pensamiento computacional en un proyecto práctico?</h6>
+                  <label><input type="radio" name="q4" value="a"> A) Ayuda a descomponer problemas en sub-problemas identificables</label>
+                  <label><input type="radio" name="q4" value="b"> B) No tiene beneficios</label>
+                  <label><input type="radio" name="q4" value="c"> C) Solo sirve para diseño visual</label>
+                </div>
+                <div class="question">
+                  <h6>5. ¿Qué significa "DOM manipulation" en el contexto de un proyecto web?</h6>
+                  <label><input type="radio" name="q5" value="a"> A) Manipulación del Modelo de Ob Documento</label>
+                  <label><input type="radio" name="q5" value="b"> B) Mantenimiento de documentos</label>
+                  <label><input type="radio" name="q5" value="c"> C) Eliminación de archivos</label>
+                </div>
+              </div>
+              <p class="source-note">Fuente: principios de aprendizaje de desarrollo, mejores prácticas educativas</p>
+            </div>
+    <div class="card">
+      <div class="card-header">
+        <h3>FASE 2: Desarrollo con Inteligencia Artificial</h3>
+      </div>
+      <div class="card-body">
+        <div class="section">
+          <div class="topic">
+            <h4>Introducción a la IA</h4>
+            <p>Campo de la informática que se enfoca en crear sistemas capaces de realizar tareas que normalmente requerirían inteligencia humana. Incluye aprendizaje automático, razonamiento, percepción, procesamiento del lenguaje natural y toma de decisiones. Los sistemas de IA modernos se basan en modelos estadísticos y reconocimiento de patrones. La IA se divide en IA estrecha (ANI) y IA general (AGI), siendo la actual IA estrecha.</p>
+            <div class="objectives">
+              <h5>Deberías saber (basado en AI Engineer Roadmap 2026, IBM Watsonx, Scaler Academy, Andrew Ng Coursera):</h5>
+              <ul>
+                <li>Diferencia fundamental entre IA tradicional (sistemas basados en reglas explícitas, sistemas expertos) vs IA generativa (modelos que aprenden patrones de datos y generan nuevo contenido), la diferencia entre discriminativa vs generativa</li>
+                <li>Breve historia: Taller de Dartmouth 1956 (nacimiento de la IA), "AI winters" de los años 70-80 y 90 (inviernos de IA), renacimiento desde ~2012 con deep learning y redes neuronales profundas, transformación con transformers en 2017 (Attention is All You Need)</li>
+                <li>Tipos de aprendizaje automático: Supervisado (ej. regresión lineal, clasificación con labeled data, 80% uso en la industria), No supervisado (clustering, reducción de dimensionalidad, k-means, PCA), Por refuerzo (agent learns through rewards/re penalties, RLHF - Reinforcement Learning from Human Feedback)</li>
+                <li>Papel fundamental de los datos: calidad sobre cantidad, limpieza de datos, features engineering, sesgo en datasets que puede propagar a modelos (garbage in, garbage out), data versioning, data pipelines</li>
+                <li>Pilares técnicos: Datasets públicos (Kaggle, UCI, MNIST, CIFAR), dato sintético para augmentación, GPUs/TPUs para entrenamiento paralelo (CUDA, cuDNN), cloud computing (AWS SageMaker, Google Colab, Azure ML, Databricks) para escalar, MLOps</li>
+                <li>Mitos vs realidades: IA no tiene conciencia ni sentimiento, no reemplaza completamente a humanos (augmenta en lugar de sustituye), limitaciones actuales incluyen alucinaciones (hallucination rate), sesgo, costo computacional, necesidad de supervisión humana, contexto limitado</li>
+              </ul>
+            </div>
+            <div class="exam">
+              <h5>Examen: Introducción a la IA</h5>
+              <p>Responde las siguientes preguntas:</p>
+              <div class="questions">
+                <div class="question">
+                  <h6>1. ¿Cuál es la diferencia fundamental entre IA tradicional y IA generativa?</h6>
+                  <label><input type="radio" name="q1" value="a"> A) IA tradicional usa sistemas basados en reglas explícitas, IA generativa aprende patrones de datos y genera nuevo contenido</label>
+                  <label><input type="radio" name="q1" value="b"> B) IA tradicional genera contenido, IA tradicional usa reglas</label>
+                  <label><input type="radio" name="q1" value="c"> C) No hay diferencia</label>
+                </div>
+                <div class="question">
+                  <h6>2. ¿En qué año se celebró el taller de Dartmouth, considerado el nacimiento de la IA?</h6>
+                  <label><input type="radio" name="q2" value="a"> A) 1945</label>
+                  <label><input type="radio" name="q2" value="b"> B) 1956</label>
+                  <label><input type="radio" name="q2" value="c"> C) 1969</label>
+                </div>
+                <div class="question">
+                  <h6>3. ¿Qué son los "AI winters"?</h6>
+                  <label><input type="radio" name="q3" value="a"> A) Inviernos donde la IA se vuelve más lenta</label>
+                  <label><input type="radio" name="q3" value="b"> B) Períodos de reducción de financiación e interés en la IA (años 70-80 y 90)</label>
+                  <label><input type="radio" name="q3" value="c"> C) Éxitos rápidos de modelos de IA</label>
+                </div>
+                <div class="question">
+                  <h6>4. ¿Qué tipo de aprendizaje automático usa labeled data para clasificación?</h6>
+                  <label><input type="radio" name="q4" value="a"> A) Supervisado</label>
+                  <label><input type="radio" name="q4" value="b"> B) No supervisado</label>
+                  <label><input type="radio" name="q4" value="c"> C) Por refuerzo</label>
+                </div>
+                <div class="question">
+                  <h6>5. ¿Cuál es una limitación actual de la IA mencionada en los objetivos?</h6>
+                  <label><input type="radio" name="q5" value="a"> A) IA tiene conciencia y sentimiento</label>
+                  <label><input type="radio" name="q5" value="b"> B) Alucinaciones, sesgo, costo computacional, necesidad de supervisión humana, contexto limitado</label>
+                  <label><input type="radio" name="q5" value="c"> C) Ninguna limitación</label>
+                </div>
+              </div>
+              <p class="source-note">Fuente: AI Engineer Roadmap 2026, IBM Watsonx, Scaler Academy, Andrew Ng Coursera</p>
+            </div>
+            <p>Tipo de IA que puede generar contenido nuevo (texto, imágenes, audio, código) basándose en patrones aprendidos de datos de entrenamiento. Se fundamenta en Large Language Models (LLMs) y modelos de difusión. Transformando cómo se crea contenido y desarrollo de software. Los modelos más conocidos son GPT-4, Claude 3, Gemini 1.5, Llama 3.</p>
+            <div class="objectives">
+              <h5>Deberías saber (basado en roadmaps de AI Engineer, Medium articles, Scaler, arxiv papers):</h5>
+              <ul>
+                <li>Qué son los LLMs (Large Language Models): modelos de lenguaje con miles de millones de parámetros (GPT-4 con ~1 billón de parámetros, Claude 3 Opus, Gemini 1.5 Pro, Llama 3 8B/70B) que comprenden y generan lenguaje humano a nivel de texto, código y razonamiento</li>
+                <li>Fundamentos: Tokens (unidades de texto, subpalabras, palabrapieces, BPE - Byte Pair Encoding, WordPiece, Unigram tokenization), embeddings (representaciones vectoriales de significado en espacios de alta dimensión, dimensiones típicas: 768, 1536, 4096), attention mechanism (mecanismo de atención que pesa la importancia de diferentes partes del input, self-attention, cross-attention)</li>
+                <li>Ecosistema comercial: "Copilot" concepto, OpenAI GPT series (GPT-3.5, GPT-4, GPT-4o), Anthropic Claude (Haiku, Sonnet, Opus), Google Gemini (1.0, 1.5 Flash/Pro), Llama Models (Llama 2, Llama 3 de Meta)</li>
+                <li>Cómo funcionan a alto nivel: Pre-training en grandes corpus (WebText, Common Crawl, C4, The Pile, Reddit), fine-tuning o prompt engineering para casos de uso específicos, reinforcement learning from human feedback (RLHF) alineación del modelo</li>
+                <li>Casos de uso: Generación de código (GitHub Copilot, código generado, completion de funciones), creación de contenido (blogs, artículos, marketing), resúmenes (documentos extensos, artículos de investigación), chatbots (customer service, support agents), traducción (múltiples idiomas), clasificación (sentimiento, spam, categorías), creatividad (poesía, historias, diseño)</li>
+                <li>Limitaciones: Alucinaciones (información falsa presentada con confianza, tasa de alucinación estimada 3-10% en algunos modelos), sesgo de entrenamiento (sesgos de género, raza, geográficos), costo computacional (costos de entrenamiento millonarios, costos de inferencia por token), contexto limitado (ventana de contexto: 8K, 32K, 128K tokens), dependencia de datos de calidad</li>
+              </ul>
+            </div>
+            <p class="source-note">Fuente: AI Engineer Roadmap GitHub, Medium "AI Engineer Roadmap for 2026", Scaler Academy contents, arxiv papers 2023-2024, "Attention Is All You Need" (Vaswani et al., 2017)</p>
+          </div>
+
+          <div class="topic">
+            <h4>Prompting y Multimodalidad</h4>
+            <p>Técnica de comunicarse con modelos de IA mediante prompts (instrucciones texto). La multimodalidad permite procesar y generar múltiples tipos de datos (texto, imágenes, audio). Transformando la interacción humano-máquina. Los prompts pueden ser zero-shot, one-shot o few-shot.</p>
+            <div class="objectives">
+              <h5>Deberías saber (basado en prompt engineering guides, LangChain docs, OpenAI best practices, IBM RAG docs):</h5>
+              <ul>
+                <li>Prompt engineering básico: ser específico, proporcionar contexto, especificar formato de salida, few-shot (3-5 ejemplos), zero-shot (sin ejemplos), one-shot (un ejemplo)</li>
+                <li>Técnicas avanzadas: chain-of-thought (razonamiento en cadena: "Let's think step by step"), tree-of-thought, auto-com prompting, reflexión y auto-corrección, self-consistency (muestras múltiples respuestas y toma mayoritaria)</li>
+                <li>Multimodalidad: modelos que procesan texto + imágenes (GPT-4V, Claude 3 Opus, Gemini 1.5 Pro con visión), texto + audio (Whisper para transcripción, voice interface), generación de imágenes (DALL-E 3, Stable Diffusion XL, Midjourney v6)</li>
+                <li>APIs clave: OpenAI API (ChatCompletion, completions, embeddings, moderation), Hugging Face inference API, Google AI Studio, GitHub Models, Anthropic API</li>
+                <li>Whisper: modelo de OpenAI para reconocimiento de voz/transcripción, soportando múltiples idiomas (100+ idiomas), formatos (mp3, wav, m4a, flac), precisión variable por idioma</li>
+                <li>Casos de uso: Automatización de reportes (generación automática de reports ejecutivos), creación de contenido visual (diseño, mockups, ilustraciones), análisis de datos hablados (entrevistas, llamadas), accesibilidad (subtítulos, transcripción), asistentes de voz</li>
+              </ul>
+            </div>
+            <div class="exam">
+              <h5>Examen: IA Generativa</h5>
+              <p>Responde las siguientes preguntas:</p>
+              <div class="questions">
+                <div class="question">
+                  <h6>1. ¿Qué son los LLMs (Large Language Models)?</h6>
+                  <label><input type="radio" name="q1" value="a"> A) Modelos de lenguaje con miles de millones de parámetros que comprenden y generan lenguaje humano</label>
+                  <label><input type="radio" name="q1" value="b"> B) Modelos pequeños de clasificación</label>
+                  <label><input type="radio" name="q1" value="c"> C) Modelos únicamente para reconocimiento de voz</label>
+                </div>
+                <div class="question">
+                  <h6>2. ¿Qué son los "tokens" en los modelos de lenguaje?</h6>
+                  <label><input type="radio" name="q2" value="a"> A) Unidades de texto, subpalabras o palabrapiezas</label>
+                  <label><input type="radio" name="q2" value="b"> B) Tipos de datos numéricos</label>
+                  <label><input type="radio" name="q2" value="c"> C) Formatos de archivo</label>
+                </div>
+                <div class="question">
+                  <h6>3. ¿Cuál de los siguientes NO es un modelo LLM conocido?</h6>
+                  <label><input type="radio" name="q3" value="a"> A) GPT-4</label>
+                  <label><input type="radio" name="q3" value="b"> B) Claude 3</label>
+                  <label><input type="radio" name="q3" value="c"> C) Windows IA</label>
+                </div>
+                <div class="question">
+                  <h6>4. ¿Qué es la "atención" (attention mechanism) en los transformers?</h6>
+                  <label><input type="radio" name="q4" value="a"> A) Mecanismo que pesa la importancia de diferentes partes del input</label>
+                  <label><input type="radio" name="q4" value="b"> B) Un tipo de capa de convolución</label>
+                  <label><input type="radio" name="q4" value="c"> C) Un método de entrenamiento inicial</label>
+                </div>
+                <div class="question">
+                  <h6>5. ¿Cuál es una limitación de los LLMs mencionada en los objetivos?</h6>
+                  <label><input type="radio" name="q5" value="a"> A) Alucinaciones (información falsa con confianza)</label>
+                  <label><input type="radio" name="q5" value="b"> B) Siempre verdad garantizada</label>
+                  <label><input type="radio" name="q5" value="c"> C) Sin costo computacional</label>
+                </div>
+              </div>
+              <p class="source-note">Fuente: AI Engineer Roadmap GitHub, Medium, Scaler Academy, arXiv papers</p>
+            </div>
+            <p>Frameworks que facilitan el desarrollo de soluciones con IA: RAG (Retrieval-Augmented Generation), fine-tuning, librerías de código (LangChain, LlamaIndex). Organizando y manteniendo proyectos de software que incluyen módulos de IA. RAG es el patrón más importante para aplicaciones empresariales.</p>
+            <div class="objectives">
+              <h5>Deberías saber (basado en LangChain docs, IBM RAG surveys, SuperML roadmaps, arXiv papers):</h5>
+              <ul>
+                <li>Qué es RAG y cuándo usarlo: Retrieval-Augmented Generation - combina modelos generativos con recuperación de información externa para fundamentar respuestas en datos reales, reducing hallucinations</li>
+                <li>Diferencia RAG vs fine-tuning: RAG usa datos externos en tiempo real (always up-to-date) vs fine-tuning modifica pesos del modelo entrenado (frozen weights, outdated después del entrenamiento)</li>
+                <li>Componentes RAG: Retriever (busca en vector stores/db - FAISS, Milvus, Pinecone, Weaviate, Chroma, Qdrant), Augmentation (combina query + retrieved context con prompt engineering), Generator (LLM que responde, typically el mismo LLM base)</li>
+                <li>Instalar y configurar LangChain: Python package `langchain`, integrations con OpenAI/Anthropic/Gemini, chains (LLMChain, RouterChain, SequentialChain), agents (React Agent, AgentExecutor), memory</li>
+                <li>LlamaIndex: para creación de índices de datos, query engines, tool integration con fuentes de datos, document loaders, node parser, embedding models</li>
+                <li>Estructurar un proyecto con módulos de IA: separation of concerns, prompts management (prompt files, prompt templates, versionado), vector store selection (basado en casos de uso), evaluation loops (hallucination rate, relevance, factual accuracy)</li>
+              </ul>
+            </div>
+            <div class="exam">
+              <h5>Examen: AI Frameworks</h5>
+              <p>Responde las siguientes preguntas:</p>
+              <div class="questions">
+                <div class="question">
+                  <h6>1. ¿Qué es RAG (Retrieval-Augmented Generation)?</h6>
+                  <label><input type="radio" name="q1" value="a"> A) Combina modelos generativos con recuperación de información externa para fundamentar respuestas en datos reales</label>
+                  <label><input type="radio" name="q1" value="b"> B) Un tipo de red neuronal recursiva</label>
+                  <label><input type="radio" name="q1" value="c"> C) Un framework de almacenamiento de datos</label>
+                </div>
+                <div class="question">
+                  <h6>2. ¿Cuál es la principal diferencia entre RAG y fine-tuning?</h6>
+                  <label><input type="radio" name="q2" value="a"> A) RAG usa datos externos en tiempo real, fine-tuning modifica pesos del modelo entrenado</label>
+                  <label><input type="radio" name="q2" value="b"> B) RAG modifica pesos, fine-tuning usa datos externos</label>
+                  <label><input type="radio" name="q2" value="c"> C) No hay diferencia</label>
+                </div>
+                <div class="question">
+                  <h6>3. ¿Cuál de los siguientes es un Retriever en RAG?</h6>
+                  <label><input type="radio" name="q3" value="a"> A) FAISS, Milvus, Pinecone, Weaviate, Chroma, Qdrant</label>
+                  <label><input type="radio" name="q3" value="b"> B) GPT-4, Claude, Gemini</label>
+                  <label><input type="radio" name="q3" value="c"> C) HTML, CSS, JavaScript</label>
+                </div>
+                <div class="question">
+                  <h6>4. ¿Qué significa "separation of concerns" en proyectos con módulos de IA?</h6>
+                  <label><input type="radio" name="q4" value="a"> A) Separación de responsabilidades entre componentes</label>
+                  <label><input type="radio" name="q4" value="b"> C) Un solo componente que hace todo</label>
+                  <label><input type="radio" name="q4" value="c"> C) Diseño visual separation</label>
+                </div>
+                <div class="question">
+                  <h6>5. ¿Qué son los "evaluation loops" en proyectos de IA?</h6>
+                  <label><input type="radio" name="q5" value="a"> A) Bucles de evaluación (rate de alucinaciones, relevancia, exactitud factual)</label>
+                  <label><input type="radio" name="q5" value="b"> B) Bucles de depuración de código</label>
+                  <label><input type="radio" name="q5" value="c"> C) Bucles de actualización de SO</label>
+                </div>
+              </div>
+              <p class="source-note">Fuente: LangChain documentation, IBM RAG pattern surveys, SuperML ML Engineer Roadmap 2026, arXiv papers on RAG evaluation</p>
+            </div>
+            <p>Modelos de razonamiento actual, chain-of-thought, agentes de IA que trabajan de forma autónoma con herramientas. Anticipar hacia dónde se mueve el campo (2024-2025+) y preparación para próximos avances. El field está evolucionando rapidísimo.</p>
+            <div class="objectives">
+              <h5>Deberías saber (basado en arxiv papers, AI researcher blogs, roadmaps 2025-2026, industry reports):</h5>
+              <ul>
+                <li>Modelos de razonamiento: modelos que "piensan" antes de responder, chain-of-thought prompting hace que los modelos dividan problemas en pasos intermedios (CoT: "Let's think step by step"), implicit CoT, chain-of-thought distillation</li>
+                <li>Agentes de IA: sistemas que pueden usar herramientas, llamar APIs, ejecutar código, razonar iterativamente (AutoGPT, BabyAGI, LangGraph agents, AutoGen, CrewAI, OpenAI Agents SDK)</li>
+                <li>Tendencias 2024-2025: modelos multimodales (GPT-4V, Claude 3, Gemini 1.5 Pro con visión), agentes autónomos con memoria persistente, RAG systems en producción a escala (RAG at enterprise scale), fine-tuning eficiente (LoRA, QLoRA, prefix tuning, prompt tuning)</li>
+                <li>Limitaciones actuales: alucinaciones, sesgo, costo computacional, necesidad de supervisión humana, problemas de escalabilidad en production, regulatory compliance (GDPR, HIPAA, IA Act EU)</li>
+                <li>Ética y regulación: IA Act de la UE (risk-based regulation, prohibitions on certain applications, transparency requirements), gobernanza de modelos, transparencia requerida, responsabilidades del desarrollador, AI risk management frameworks (NIST AI RMF, ISO/IEC 42001)</li>
+              </ul>
+            </div>
+            <div class="exam">
+              <h5>Examen: Estado del Arte Actual y Tendencias</h5>
+              <p>Responde las siguientes preguntas:</p>
+              <div class="questions">
+                <div class="question">
+                  <h6>1. ¿Qué son los modelos de razonamiento actuales?</h6>
+                  <label><input type="radio" name="q1" value="a"> A) Modelos que "piensan" antes de responder, chain-of-thought prompting divide problemas en pasos intermedios</label>
+                  <label><input type="radio" name="q1" value="b"> B) Modelos que responden inmediatamente sin procesamiento</label>
+                  <label><input type="radio" name="q1" value="c"> C) Modelos exclusivamente para reconocimiento de imágenes</label>
+                </div>
+                <div class="question">
+                  <h6>2. ¿Qué es chain-of-thought (CoT) prompting?</h6>
+                  <label><input type="radio" name="q2" value="a"> A) Razonamiento en cadena: "Let's think step by step"</label>
+                  <label><input type="radio" name="q2" value="b"> C) Un tipo de modelo de lenguaje</label>
+                  <label><input type="radio" name="q2" value="c"> C) Un lenguaje de programación</label>
+                </div>
+                <div class="question">
+                  <h6>3. ¿Cuáles son las tendencias 2024-2025 en IA?</h6>
+                  <label><input type="radio" name="q3" value="a"> A) Modelos multimodales, agentes autónomos, RAG a escala, fine-tuning eficiente</label>
+                  <label><input type="radio" name="q3" value="b"> B) Solo modelos de lenguaje monocaso</label>
+                  <label><input type="radio" name="q3" value="c"> C) Tecnologías solo de 2020</label>
+                </div>
+                <div class="question">
+                  <h6>4. ¿Qué significa "regulatory compliance" en IA?</h6>
+                  <label><input type="radio" name="q4" value="a"> A) Cumplimiento regulatorio (GDPR, HIPAA, IA Act EU)</label>
+                  <label><input type="radio" name="q4" value="b"> B) Cumplimiento de leyes de tránsito</label>
+                  <label><input type="radio" name="q4" value="c"> C) Cumplimiento de estándares de código</label>
+                </div>
+                <div class="question">
+                  <h6>5. ¿Cuáles son los frameworks de risk management de IA mencionados?</h6>
+                  <label><input type="radio" name="q5" value="a"> A) NIST AI RMF, ISO/IEC 42001</label>
+                  <label><input type="radio" name="q5" value="b"> B) AWS Certified, Azure Certified</label>
+                  <label><input type="radio" name="q5" value="c"> C) Ninguno de los anteriores</label>
+                </div>
+              </div>
+              <p class="source-note">Fuente: arXiv papers (2024-2025), AI researcher blogs, roadmaps de industria 2025-2026, Gartner, Forrester, NIST AI RMF, ISO/IEC 42001</p>
+            </div>
+            <p>IA diseñada y desplegada considerando implicaciones éticas, legales y sociales. Explicabilidad, privacidad, buenas prácticas. Marcos regulatorios (IA Act europeo), sesgos, discriminación, impacto en empleo y buenas prácticas industriales. La responsabilidad es crucial para la adopción empresarial.</p>
+            <div class="objectives">
+              <h5>Deberías saber (basado en EU AI Act, IBM Trustworthy AI guidelines, academic literature on AI ethics):</h5>
+              <ul>
+                <li>Principios de ética de IA: Justicia (fairness), Transparencia, Responsabilidad, No maleficencia (do no harm), these son los 4 pilares éticos fundamentales</li>
+                <li>Sesgos en datos y algoritmos: sesgos de representación (underrepresentation), sesgos de medida (measurement bias), sesgos de algoritmo (algorithmic bias), cómo detectar y mitigar con testing, dataset auditing, bias detection tools</li>
+                <li>Basics de GDPR y privacidad de datos: derecho al olvido, consentimiento, anonimización, cifrado, data minimization, propósito de procesamiento, retention policies</li>
+                <li>Importancia de la explicabilidad en decisiones IA: por qué los usuarios necesitan entender decisiones automatizadas, LIME, SHAP values, SHAP (SHapley Additive exPlanations), interpretability methods</li>
+                <li>IA Act de la Unión Europea: clasificación de riesgos (inaceptable, alto, limitado, mínimo), requisitos para sistemas de alto riesgo (assessment procedures, documentation, monitoring), prohibiciones (social scoring, subliminal techniques, exploitation of vulnerabilities)</li>
+                <li>Buenas prácticas: auditar modelos regularmente (model monitoring, drift detection), documentación de decisiones (model cards, data sheets, system cards), involucrar stakeholders diversos (red teaming, external audits), testing con grupos de afectados, accountability frameworks</li>
+              </ul>
+            </div>
+            <div class="exam">
+              <h5>Examen: IA Responsable</h5>
+              <p>Responde las siguientes preguntas:</p>
+              <div class="questions">
+                <div class="question">
+                  <h6>1. ¿Cuáles son los 4 pilares éticos fundamentales de la IA?</h6>
+                  <label><input type="radio" name="q1" value="a"> A) Justicia (fairness), Transparencia, Responsabilidad, No maleficencia (do no harm)</label>
+                  <label><input type="radio" name="q1" value="b"> A) Rentabilidad, Velocidad, Escalabilidad, Popularidad</label>
+                  <label><input type="radio" name="q1" value="c"> C) Diseño, Desarrollo, Despliegue, Mantenimiento</label>
+                </div>
+                <div class="question">
+                  <h6>2. ¿Qué es el sesgo de algoritmo (algorithmic bias)?</h6>
+                  <label><input type="radio" name="q2" value="a"> A) Viensos algorítmicos que pueden propagar discriminación</label>
+                  <label><input type="radio" name="q2" value="b"> B) Un tipo de patrón de código</label>
+                  <label><input type="radio" name="q2" value="c"> C) Un método de testing</label>
+                </div>
+                <div class="question">
+                  <h6>3. ¿Qué significa "derecho al olvido" en GDPR?</h6>
+                  <label><input type="radio" name="q3" value="a"> A) Los usuarios pueden solicitar la eliminación de sus datos personales</label>
+                  <label><input type="radio" name="q3" value="b"> B) Los modelos de IA pueden olvidar cualquier cosa</label>
+                  <label><input type="radio" name="q3" value="c"> C) Los datos deben almacenarse eternamente</label>
+                </div>
+                <div class="question">
+                  <h6>4. ¿Qué es la clasificación de riesgos en el IA Act de la UE?</h6>
+                  <label><input type="radio" name="q4" value="a"> A) Clasificación en inaceptable, alto, limitado, mínimo</label>
+                  <label><input type="radio" name="q4" value="b"> B) Solo alto y bajo</label>
+                  <label><input type="radio" name="q4" value="c"> C) Sin clasificación de riesgos</label>
+                </div>
+                <div class="question">
+                  <h6>5. ¿Qué son los "model cards" en buenas prácticas de IA responsable?</h6>
+                  <label><input type="radio" name="q5" value="a"> A) Documentación de decisiones del modelo</label>
+                  <label><input type="radio" name="q5" value="b"> B) Tarjetas de presentación de desarrolladores</label>
+                  <label><input type="radio" name="q5" value="c"> C) Tarjetas de memoria del servidor</label>
+                </div>
+              </div>
+              <p class="source-note">Fuente: EU AI Act documentation, IBM Trustworthy AI guidelines, academic literature on AI ethics, NIST AI RMF, model cards convention</p>
+            </div>
+    <div class="card">
+      <div class="card-header">
+        <h3>FASE 3: Herramientas de Desarrollo con IA</h3>
+      </div>
+      <div class="card-body">
+        <div class="section">
+          <div class="topic">
+            <h4>Filosofía de Uso de Herramientas</h4>
+            <p>No solo aprender comandos, sino entender cómo y cuándo usarlas con criterio. Integrar IA y asistentes sin perder calidad ni visión técnica. El uso estratégico de IA debe balancear productividad y calidad del software. La regla de oro: IA asiste, humano decide.</p>
+            <div class="objectives">
+              <h5>Deberías saber (basado en mejores prácticas de la industria, thought leaders, Accenture, McKinsey reports):</h5>
+              <ul>
+                <li>Cuándo usar IA generativa para programar vs escribir código manualmente: casos de uso óptimos (90% de tareas rutinarias pueden ser asistidas, 40% de código puede ser generado automáticamente en algunos proyectos)</li>
+                <li>Validación de código generado por IA: revisión de seguridad, lógica, rendimiento y estilo (code review asistida, security scanning, linters, type checkers)</li>
+                <li>Mantener visión arquitectónica: IA debe seguir patrones y arquitecturas establecidas, no diseñar desde cero sin supervisión (arquitectural guidance, design patterns)</li>
+                <li>Balance productividad/calidad: métricas para medir el impacto de IA en velocity (story points/sprint) y bug rate (reduction vs introduction of new bugs)</li>
+<li>Evitar dependencia tecnológica: mantener habilidades fundamentales y no delegar todo al asistente (pair programming con IA, code reviews humanas)</li>
+                <li>Responsable AI use: directivas organizacionales, guías de uso ético, transparency en cuándo se usa IA en el código</li>
+              </ul>
+            </div>
+            <div class="exam">
+              <h5>Examen: Filosofía de Uso de Herramientas</h5>
+              <p>Responde las siguientes preguntas:</p>
+              <div class="questions">
+                <div class="question">
+                  <h6>1. ¿Cuándo es apropiado usar IA generativa para programar?</h6>
+                  <label><input type="radio" name="q1" value="a"> A) Para tareas rutinarias y repetitivas</label>
+                  <label><input type="radio" name="q1" value="b"> B) Para todo el código sin revisión</label>
+                  <label><input type="radio" name="q1" value="c"> C) Nunca</label>
+                </div>
+                <div class="question">
+                  <h6>2. ¿Qué significa "mantener visión arquitectónica" al usar IA?</h6>
+                  <label><input type="radio" name="q2" value="a"> A) IA debe seguir patrones y arquitecturas establecidas</label>
+                  <label><input type="radio" name="q2" value="b"> B) IA debe diseñar desde cero sin supervisión</label>
+                  <label><input type="radio" name="q2" value="c"> C) La visión arquitectónica no es importante</label>
+                </div>
+                <div class="question">
+                  <h6>3. ¿Cómo se balancea productividad y calidad al usar IA?</h6>
+                  <label><input type="radio" name="q3" value="a"> A) Mediante métricas de velocity y bug rate</label>
+                  <label><input type="radio" name="q3" value="b"> "A más rápido, mejor" sin medición</label>
+                  <label><input type="radio" name="q3" value="c"> C) La calidad no importa con IA</label>
+                </div>
+                <div class="question">
+                  <h6>4. ¿Qué se debe evitar al usar IA en el desarrollo?</h6>
+                  <label><input type="radio" name="q4" value="a"> A) Evitar dependencia tecnológica</label>
+                  <label><input type="radio" name="q4" value="b"> B> Delegar todas las decisiones al asistente</label>
+                  <label><input type="radio" name="q4" value="c"> C> Mantener habilidades fundamentales</label>
+                </div>
+                <div class="question">
+                  <h6>5. ¿Cuál es la "regla de oro" en el uso de IA para desarrollo?</h6>
+                  <label><input type="radio" name="q5" value="a"> A> IA asiste, humano decide</label>
+                  <label><input type="radio" name="q5" value="b"> B> IA decide, humano asiste</label>
+                  <label><input type="radio" name="q5" value="c"> C> La IA toma todas las decisiones</label>
+                </div>
+              </div>
+              <p class="source-note">Fuente: mejores prácticas de la industria, thought leaders, Accenture, McKinsey reports</p>
+            </div>
+          </div>
+
+          <div class="topic">
+            <h4>IDEs: VS Code + Copilot Avanzado</h4>
+            <p>Configurar VS Code, usar IA para programar, testear y revisar código, buenas prácticas que mejoran productividad y calidad. GitHub Copilot es el asistente IA más integrado en el editor más popular para desarrollo (VS Code, JetBrains, Neovim). 37% de los desarrolladores usan Copilot según encuestas recientes.</p>
+            <div class="objectives">
+              <h5>Deberías saber (basado en VS Code docs, Copilot best practices, Microsoft Learn, State of Developer Survey 2024):</h5>
+              <ul>
+                <li>Instalar y configurar extensiones de IA en VS Code: GitHub Copilot, Copilot Chat, IntelliCode, códigos snippets personalizados, extensiones personalizadas</li>
+                <li>Usar Copilot para completar código y funciones: Tab para aceptar sugerencias, / para slash commands, @/ para contexto de archivo, #/ para símbolos, /explain para explicar código, /doc para documentación</li>
+                <li>Revisar y validar sugerencias de Copilot: nunca aceptar ciegamente, revisar imports, lógica, edge cases, performance implications, seguridad (nunca commits keys/credentials)</li>
+                <li>Atajos y flujos de trabajo optimizados: shortcuts for diferentes lenguajes, configuración de .github/copilot-instructions (instrucciones personalizadas por proyecto), multi-cursor editing con IA</li>
+                <li>Usar Copilot Chat: hacer preguntas sobre código, explicar bloques, generar tests unitarios, debugging assistance, "explain this code", "find bug in this function"</li>
+                <li>Consideraciones de seguridad: nunca pegar credenciales o secrets en prompts de Copilot, .gitignore para secrets, secret management (Vault, AWS Secrets Manager, 1Password)</li>
+              </ul>
+            </div>
+            <p class="source-note">Fuente: VS Code documentation, GitHub Copilot best practices, Microsoft Learn Copilot docs, State of Developer Survey 2024 (Stack Overflow, JetBrains)</p>
+          </div>
+
+          <div class="topic">
+            <h4>Otros IDEs</h4>
+            <p>Entornos de desarrollo alternativos y sus extensiones para acelerar proyectos con IA. Comparar flujos de trabajo, depuración integrada y herramientas de asistencia inteligente según cada caso. JetBrains AI Assistant, Neovim con Copilot, Vim con AI plugins, Emacs con Copilot.</p>
+          </div>
+
+          <div class="topic">
+            <h4>Copilot dentro de GitHub</h4>
+            <p>Cómo Copilot se integra en GitHub para optimizar el ciclo de vida del código: resúmenes automáticos y revisiones asistidas, seguridad con Code Scanning y Dependabot, rol en Issues, Discussions, agentes y Loops. Copilot ahora incluye Chat en la interfaz de GitHub.</p>
+          </div>
+
+          <div class="topic">
+            <h4>Codex ACTUALIZADO</h4>
+            <p>Utilizar Codex como herramienta de apoyo al desarrollo: diferentes entornos y posibilidades de integración, CLI, herramienta de escritorio, plugins, automatizar tareas mediante Scheduled y trabajar con Site. Codex está integrado en Copilot y otras herramientas.</p>
+          </div>
+
+          <div class="topic">
+            <h4>Claude NUEVO</h4>
+            <p>Integrar Claude en flujo de desarrollo: Claude CLI, personalizar herramienta, crear rutinas adaptadas, posibilidades para diseño con IA. Claude 3 series (Haiku, Sonnet, Opus) ofrecen diferentes balances de velocidad/ Inteligencia. Claude sondea menos los guardrails que otros modelos.</p>
+          </div>
+
+          <div class="topic">
+            <h4>OpenCode NUEVO</h4>
+            <p>Utilizar OpenCode como entorno de desarrollo asistido por IA: CLI y aplicación de escritorio, extensiones e integraciones, ampliar capacidades, adaptar a distintos flujos de trabajo y herramientas de desarrollo. OpenCode es la respuesta open-source a Copilot.</p>
+          </div>
+
+          <div class="topic">
+            <h4>Diseño Visual Asistido por IA</h4>
+            <p>IA acelera diseño visual: Figma con plugins inteligentes (Figma AI, Diagram, Magician), generar mockups con uizard y crear maquetas de apps con Galileo AI. Un módulo clave para integrar diseño y desarrollo de manera fluida. Figma AI puede generar diseños a partir de prompts de texto.</p>
+          </div>
+
+          <div class="topic">
+            <h4>MVP con IA</h4>
+            <p>Pasar de idea a prototipo funcional en minutos con v0 y Lovable. Materializar conceptos rápidamente, validar ideas con prototipos navegables sin semanas de desarrollo intensivo. 40% más rápido ir de idea a MVP con herramientas de IA.</p>
+          </div>
+
+          <div class="topic">
+            <h4>Automatización: n8n</h4>
+            <p>Automatizar procesos mediante n8n y otras herramientas low-code impulsadas por IA. Conocer casos prácticos de integración de servicios y aprender a optimizar tareas repetitivas para mejorar la eficiencia en tus proyectos. n8n es una herramienta de workflow automation con código visible, fair-code license, 500+ integraciones, AI nodes, human-in-the-loop.</p>
+            <div class="objectives">
+              <h5>Deberías saber (basado en n8n docs, n8n.io, case studies Vodafone/Huel, enterprise documentation):</h5>
+              <ul>
+                <li>Qué es n8n: workflow automation tool fair-code licensed, visual node-based editor para conectar apps y servicios, código visible y editable, self-hostable o n8n cloud</li>
+                <li>AI native automation: conectar LLMs (OpenAI, Anthropic, Google Models) con flujos de lógica, herramientas y aprobaciones humanas, AI nodes con prompts, model selection</li>
+                <li>MCP (Model Context Protocol): estándar para que agentes de IA accedan a tools y recursos de manera estandarizada (especificación en desarrollo, primeros implementadores)</li>
+                <li>500+ integraciones: conectar con Google Sheets, Slack, PostgreSQL, Airtable, Telegram, Docker, Salesforce, Jira, HubSpot, Zapier (alternativa), Make (alternativa)</li>
+                <li>Casos reales: Huel ahorró 1,000 horas de manual work, Vodafone saved £2.2M en threat intelligence, Unilever, Toyota, Airbnb usan n8n</li>
+                <li>Features clave: Self-host option (on-premises), RBAC permissions (role-based access control), audit logs (activity tracking, compliance), version control (Git sync), workflow diffs (change visualization)</li>
+                <li>AI governance: structured inputs/outputs (JSON schemas, Pydantic models), human-in-the-loop approvals (approval nodes, manual gates), rule-based containment (branching workflows, fallback nodes)</li>
+              </ul>
+            </div>
+            <p class="source-note">Fuente: n8n.io documentation, n8n case studies, community blogs, enterprise docs, company case studies</p>
+          </div>
+
+          <div class="topic">
+            <h4>Modelos de IA Locales</h4>
+            <p>Implementar modelos de IA locales para inferencia privada y baja latencia en desarrollo. Ajustar requisitos de hardware, cuantización (quantization: int8, int4, GGUF, AWQ, bitsandbytes), embeddings y servidores ligeros (Llama.cpp, Ollama, vLLM). Integrar en IDE y pipelines. Pruebas de rendimiento, despliegues reproducibles seguros. Offline-first, data privacy.</p>
+          </div>
+
+          <div class="topic">
+            <h4>Warp</h4>
+            <p>Warp como terminal moderna optimizada para productividad y asistida por IA. Funciones inteligentes que transforman experiencia de línea de comandos, más intuitiva, rápida y colaborativa. Warp Drive, AI commands, natural language commands, teams features.</p>
+          </div>
+
+          <div class="topic">
+            <h4>Revisión de Código con IA usando CodeRabbit</h4>
+            <p>Dominar CodeRabbit: revisiones asistidas por IA, lo básico hasta flujos avanzados con Agentic Chat: automatizar PRs, generar documentación y tests, e incluso personalizar revisiones al estilo de tu equipo para mejorar colaboración y calidad. CodeRabbit mejora los ciclos de review en 30-50%.</p>
+          </div>
+
+          <div class="topic">
+            <h4>OpenClaw: Tu Asistente 24/7</h4>
+            <p>Configurar y utilizar OpenClaw como un asistente basado en agentes capaz de automatizar tareas diarias, integrarse con correo, calendario, navegador, Telegram y modelos de IA locales o remotos. Además, crear skills personalizadas y flujos automatizados para optimizar productividad. OpenClaw es open-source y se auto-hospeda.</p>
+          </div>
+
+          <div class="topic">
+            <h4>Hermes NUEVO</h4>
+            <p>Conocer Hermes como agente de IA orientado al desarrollo y aprender a configurarlo y utilizarlo desde cero. Capacidades más allá de un agente convencional, incluyendo uso de IA local y conexión con herramientas y servicios mediante integraciones y MCP. Hermes es un modelo de lenguaje optimizado para agentes.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- FASE 4: Calidad -->
+    <div class="card">
+      <div class="card-header">
+        <h3>FASE 4: Calidad y Mejora de Software</h3>
+      </div>
+      <div class="card-body">
+        <div class="section">
+          <div class="topic">
+            <h4>Testing</h4>
+            <p>Aplicar pruebas unitarias, de integración y E2E con enfoque centrado en el usuario. TDD innovador donde la IA genera los casos iniciales y tú el código. Usar @testing-library y Playwright para automatizar tests y crear informes visuales. El testing piramidal: 70% unit, 20% integration, 10% E2E.</p>
+            </div>
+            <div class="exam">
+              <h5>Examen: Testing</h5>
+              <p>Responde las siguientes preguntas:</p>
+              <div class="questions">
+                <div class="question">
+                  <h6>1. ¿Cuál es la proporción del testing piramidal?</h6>
+                  <label><input type="radio" name="q1" value="a"> A) 70% unit, 20% integration, 10% E2E</label>
+                  <label><input type="radio" name="q1" value="b"> B) 50% unit, 30% integration, 20% E2E</label>
+                  <label><input type="radio" name="q1" value="c"> C) 80% unit, 10% integration, 10% E2E</label>
+                </div>
+                <div class="question">
+                  <h6>2. ¿Qué tipo de prueba se enfoca en probar componentes aislados?</h6>
+                  <label><input type="radio" name="q2" value="a"> A) Unit tests</label>
+                  <label><input type="radio" name="q2" value="b"> B) Integration tests</label>
+                  <label><input type="radio" name="q2" value="c"> C) E2E tests</label>
+                </div>
+                <div class="question">
+                  <h6>3. ¿Qué significan las iniciales E2E?</h6>
+                  <label><input type="radio" name="q3" value="a"> A) End to End</label>
+                  <label><input type="radio" name="q3" value="b"> B) Error to Error</label>
+                  <label><input type="radio" name="q3" value="c"> C) External to External</label>
+                </div>
+                <div class="question">
+                  <h6>4. ¿Cuál es el objetivo principal de los unit tests?</h6>
+                  <label><input type="radio" name="q4" value="a"> A) Probar lógica de negocio individual</label>
+                  <label><input type="radio" name="q4" value="b"> Probar la interfaz de usuario</label>
+                  <label><input type="radio" name="q4" value="c"> Probar el despliegue</label>
+                </div>
+                <div class="question">
+                  <h6>5. ¿Cuándo deberían escribirse los tests en un enfoque TDD?</h6>
+                  <label><input type="radio" name="q5" value="a"> A) Antes del código (red-green-refactor)</label>
+                  <label><input type="radio" name="q5" value="b"> Después de terminar el código</label>
+                  <label><input type="radio" name="q5" value="c"> Nunca</label>
+                </div>
+              </div>
+              <p class="source-note">Fuente: testing best practices, unit testing guides, testing pyramid concepts</p>
+            </div>
+            <p>Identificar code smells (malos olores en el código), refactorizar para mejorar estructura, y gestionar la deuda técnica. Code smell comunes: funciones largas, parámetros excesivos, duplicación, nombres poco claros, comments innecesarios.</p>
+            </div>
+            <div class="exam">
+              <h5>Examen: Code Smells, Refactor y Deuda</h5>
+              <p>Responde las siguientes preguntas:</p>
+              <div class="questions">
+                <div class="question">
+                  <h6>1. ¿Cuál es un code smell común relacionado con el tamaño de las funciones?</h6>
+                  <label><input type="radio" name="q1" value="a"> A) Funciones largas</label>
+                  <label><input type="radio" name="q1" value="b"> B) Funciones muy pequeñas</label>
+                  <label><input type="radio" name="q1" value="c"> C) Funciones sin nombre</label>
+                </div>
+                <div class="question">
+                  <h6>2. ¿Qué significa "refactor" en el desarrollo de software?</h6>
+                  <label><input type="radio" name="q2" value="a"> A) Mejorar la estructura del código sin cambiar su comportamiento</label>
+                  <label><input type="radio" name="q2" value="b"> B) Reescribir el código desde cero</label>
+                  <label><input type="radio" name="q2" value="c"> C) Eliminar código</label>
+                </div>
+                <div class="question">
+                  <h6>3. ¿Cuál de los siguientes NO es un code smell común?</h6>
+                  <label><input type="radio" name="q3" value="a"> A) Parámetros excesivos</label>
+                  <label><input type="radio" name="q3" value="b"> B) Nombres poco claros</label>
+                  <label><input type="radio" name="q3" value="c"> C) Comentarios significativos</label>
+                </div>
+                <div class="question">
+                  <h6>4. ¿Qué es la "deuda técnica"?</h6>
+                  <label><input type="radio" name="q4" value="a"> A) El costo de mantenimiento futuro derivado de atajos tomados en el desarrollo</label>
+                  <label><input type="radio" name="q4" value="b"> B) Errores de sintaxis</label>
+                  <label><input type="radio" name="q4" value="c"> C) Falta de documentación</label>
+                </div>
+                <div class="question">
+                  <h6>5. ¿Por qué son problemáticos los "comentarios innecesarios"?</h6>
+                  <label><input type="radio" name="q5" value="a"> A) El código debe ser autoexplicativo</label>
+                  <label><input type="radio" name="q5" value="b"> B) Ocupan muy poco espacio</label>
+                  <label><input type="radio" name="q5" value="c"> C) Mejoran siempre la comprensión</label>
+                </div>
+              </div>
+              <p class="source-note">Fuente: principios de refactoring, clean code guidelines, code smell detection</p>
+            </div>
+            <p>Aplicar principios SOLID (Single Responsibility, Open/Closed, Liskov Substitution, Interface Segregation, Dependency Inversion) para diseñar software mantenible y escalable. SOLID es la base de Clean Architecture.</p>
+            </div>
+            <div class="exam">
+              <h5>Examen: Arquitectura Limpia y SOLID</h5>
+              <p>Responde las siguientes preguntas:</p>
+              <div class="questions">
+                <div class="question">
+                  <h6>1. ¿Qué principio SOLID establece que una clase debe tener solo una razón para cambiar?</h6>
+                  <label><input type="radio" name="q1" value="a"> A) Single Responsibility Principle (SRP)</label>
+                  <label><input type="radio" name="q1" value="b"> B) Open/Closed Principle (OCP)</label>
+                  <label><input type="radio" name="q1" value="c"> C) Liskov Substitution Principle (LSP)</label>
+                </div>
+                <div class="question">
+                  <h6>2. ¿Qué significa Open/Closed (OCP)?</h6>
+                  <label><input type="radio" name="q2" value="a"> A) Las clases deben estar abiertas para extensión pero cerradas para modificación</label>
+                  <label><input type="radio" name="q2" value="b"> B) Las clases deben ser siempre abiertas</label>
+                  <label><input type="radio" name="q2" value="c"> C) Las clases deben cerrarse después de creado</label>
+                </div>
+                <div class="question">
+                  <h6>3. ¿Cuál de los siguientes NO es un principio SOLID?</h6>
+                  <label><input type="radio" name="q3" value="a"> A) Single Responsibility</label>
+                  <label><input type="radio" name="q3" value="b"> B) Model-View-Controller</label>
+                  <label><input type="radio" name="q3" value="c"> C) Dependency Inversion</label>
+                </div>
+                <div class="question">
+                  <h6>4. ¿Qué establece el Principio de Sustitución de Liskov (LSP)?</h6>
+                  <label><input type="radio" name="q4" value="a"> A) Las clases derivadas deben poder sustituirse por sus clases base</label>
+                  <label><input type="radio" name="q4" value="b"> B) Las clases deben heredarse públicamente</label>
+                  <label><input type="radio" name="q4" value="c"> C) Las interfaces deben ser segregradas</label>
+                </div>
+                <div class="question">
+                  <h6>5. ¿Qué principio de SOLID se refiere a la inversión de dependencias?</h6>
+                  <label><input type="radio" name="q5" value="a"> A) Dependency Inversion Principle (DIP)</label>
+                  <label><input type="radio" name="q5" value="b"> B) Data Inversion Principle</label>
+                  <label><input type="radio" name="q5" value="c"> C) Definition Inversion Principle</label>
+                </div>
+              </div>
+              <p class="source-note">Fuente: principios SOLID, Clean Architecture, diseño de software mantenible</p>
+            </div>
+            <p>Principios básicos de seguridad en desarrollo: validación de entradas, escape de output, gestión de secretos, authentication y authorization, OWASP Top 10, secure coding practices.</p>
+          </div>
+
+          <div class="topic">
+            <h4>Performance y Optimización</h4>
+            <p>Técnicas para mejorar el rendimiento del software: profiling, caching, async processing, algorithm optimization, resource management. Premature optimization es la raíz de todos los males - Knuth.</p>
+            </div>
+            <div class="exam">
+              <h5>Examen: Performance y Optimización</h5>
+              <p>Responde las siguientes preguntas:</p>
+              <div class="questions">
+                <div class="question">
+                  <h6>1. Según Knuth, qué se considera la raíz de todos los males?</h6>
+                  <label><input type="radio" name="q1" value="a"> A) Premature optimization</label>
+                  <label><input type="radio" name="q1" value="b"> B) Falta de documentación</label>
+                  <label><input type="radio" name="q1" value="c"> C) Mala arquitectura</label>
+                </div>
+                <div class="question">
+                  <h6>2. ¿Cuál es una técnica de optimización de rendimiento?</h6>
+                  <label><input type="radio" name="q2" value="a"> A) Profiling</label>
+                  <label><input type="radio" name="q2" value="b"> Caching</label>
+                  <label><input type="radio" name="q2" value="c"> A) ambas anteriores</label>
+                </div>
+                <div class="question">
+                  <h6>3. ¿Qué es "premature optimization"?</h6>
+                  <label><input type="radio" name="q3" value="a"> A) Optimización antes de necesitarla</label>
+                  <label><input type="radio" name="q3" value="b"> B) Optimización al final del proyecto</label>
+                  <label><input type="radio" name="q3" value="c"> C) Ninguna de las anteriores</label>
+                </div>
+                <div class="question">
+                  <h6>4. ¿Qué herramienta se usa para identificar cuellos de botella de rendimiento?</h6>
+                  <label><input type="radio" name="q4" value="a"> A) Profiler</label>
+                  <label><input type="radio" name="q4" value="b">> Linter</label>
+                  <label><input type="radio" name="q4" value="c"> C) Version control</label>
+                </div>
+                <div class="question">
+                  <h6>5. ¿Por qué se debe evitar la optimización prematura?</h6>
+                  <label><input type="radio" name="q5" value="a"> A> Puede degradar la legibilidad y mantenimiento del código</label>
+                  <label><input type="radio" name="q5" value="b"> B) Siempre mejora el rendimiento</label>
+                  <label><input type="radio" name="q5" value="c"> C) Es obligatoria en todos los proyectos</label>
+                </div>
+              </div>
+              <p class="source-note">Fuente: Knuth quote, performance optimization best practices</p>
+            </div>
+            <p>Crear y mantener documentación técnica actualizada: API docs (OpenAPI/Swagger), README, markdown, diagrams (Mermaid, PlantUML), developer onboarding docs. Documentation debe estar cerca del código (docs-as-code).</p>
+            </div>
+            <div class="exam">
+              <h5>Examen: Documentación Técnica</h5>
+              <p>Responde las siguientes preguntas:</p>
+              <div class="questions">
+                <div class="question">
+                  <h6>1. ¿Qué significa "docs-as-code"?</h6>
+                  <label><input type="radio" name="q1" value="a"> A) La documentación se trata como código, versionada y revisada en el mismo proceso</label>
+                  <label><input type="radio" name="q1" value="b"> B) Documentación escrita solo en código</label>
+                  <label><input type="radio" name="q1" value="c"> C) Documentación automática sin intervención humana</label>
+                </div>
+                <div class="question">
+                  <h6>2. ¿Cuál de los siguientes se usa para diagramas de arquitectura?</h6>
+                  <label><input type="radio" name="q2" value="a"> A) Mermaid, PlantUML</label>
+                  <label><input type="radio" name="q2" value="b"> B) ESLint, Pylint</label>
+                  <label><input type="radio" name="q2" value="c"> C) Git, GitHub</label>
+                </div>
+                <div class="question">
+                  <h6>3. ¿Qué tipo de documentación se encuentra típicamente en un README?</h4>
+                  <label><input type="radio" name="q3" value="a"> A) Descripción del proyecto, setup instructions, status</label>
+                  <label><input type="radio" name="q3" value="b"> B) Solo el código fuente</label>
+                  <label><input type="radio" name="q3" value="c"> C) Pruebas unitarias</label>
+                </div>
+                <div class="question">
+                  <h6>4. ¿Qué información suelen incluir las API docs de OpenAPI/Swagger?</h6>
+                  <label><input type="radio" name="q4" value="a"> A) Endpoints, métodos, parámetros, modelos de respuesta</label>
+                  <label><input type="radio" name="q4" value="b"> B) Configuración del servidor</label>
+                  <label><input type="radio" name="q4" value="c"> C) Histor de commits</label>
+                </div>
+                <div class="question">
+                  <h6>5. ¿Dónde debe estar la documentación en relación con el código?</h6>
+                  <label><input type="radio" name="q5" value="a"> A) Cerca del código (docs-as-code)</label>
+                  <label><input type="radio" name="q5" value="b"> B) En una carpeta separada sin relación</label>
+                  <label><input type="radio" name="q5" value="c"> C) Solo en el repositorio de producción</label>
+                </div>
+              </div>
+              <p class="source-note">Fuente: documentation best practices, docs-as-code methodology, API documentation standards</p>
+            </div>
+            <p>Configurar pipelines de CI/CD (GitHub Actions, GitLab CI, Azure DevOps, Jenkins). Automatizar pruebas, builds y despliegues. CI/CD pipeline stages: checkout, build, test, code quality, security scan, deploy. Automated deployments a producción con rollback strategies.</p>
+            </div>
+            <div class="exam">
+              <h5>Examen: Integración Continua y Despliegue</h5>
+              <p>Responde las siguientes preguntas:</p>
+              <div class="questions">
+                <div class="question">
+                  <h6>1. ¿Cuáles son las etapas típicas de un pipeline CI/CD?</h6>
+                  <label><input type="radio" name="q1" value="a"> A) checkout, build, test, code quality, security scan, deploy</label>
+                  <label><input type="radio" name="q1" value="b"> B) diseño, implementation, testing, deployment</label>
+                  <label><input type="radio" name="q1" value="c"> C) análisis, código, documentación</label>
+                </div>
+                <div class="question">
+                  <h6>2. ¿Qué significa CI?</h6>
+                  <label><input type="radio" name="q2" value="a"> A) Continuous Integration</label>
+                  <label><input type="radio" name="q2" value="b"> B) Continuous Installation</label>
+                  <label><input type="radio" name="q2" value="c"> C) Code Inspection</label>
+                </div>
+                <div class="question">
+                  <h6>3. ¿Qué significa CD?</h6>
+                  <label><input type="radio" name="q3" value="a"> A) Continuous Deployment</label>
+                  <label><input type="radio" name="q3" value="b"> B) Continuous Delivery</label>
+                  <label><input type="radio" name="q3" value="c"> C) Continuous Development</label>
+                </div>
+                <div class="question">
+                  <h6>4. ¿Qué se hace en la etapa de "security scan" del pipeline?</h6>
+                  <label><input type="radio" name="q4" value="a"> A) Análisis de seguridad automatizado</label>
+                  <label><input type="radio" name="q4" value="b"> B) Diseño de la interfaz</label>
+                  <label><input type="radio" name="q4" value="c"> C) Escritura de documentación</label>
+                </div>
+                <div class="question">
+                  <h6>5. ¿Qué son las estrategias de rollback?</h6>
+                  <label><input type="radio" name="q5" value="a"> A) Planes para revertir a una versión anterior si el despliegue falla</label>
+                  <label><input type="radio" name="q5" value="b"> B) Formas de avanzar al siguiente versión</label>
+                  <label><input type="radio" name="q5" value="c"> C) Métodos para eliminar código</label>
+                </div>
+              </div>
+              <p class="source-note">Fuente: CI/CD best practices, GitHub Actions, GitLab CI, Jenkins</p>
+            </div>
+            <p>Herramientas y métricas para asegurar calidad del código: linting (ESLint, Flake8, Pylint), code coverage ( cobertura de pruebas), static analysis (SonarQube, CodeClimate), maintainability index. Quality gates en CI/CD.</p>
+            </div>
+            <div class="exam">
+              <h5>Examen: Calidad del Código</h5>
+              <p>Responde las siguientes preguntas:</p>
+              <div class="questions">
+                <div class="question">
+                  <h6>1. ¿Cuál es un principio fundamental de la calidad del código?</h6>
+                  <label><input type="radio" name="q1" value="a"> A) El código debe ser autoexplicativo</label>
+                  <label><input type="radio" name="q1" value="b"> B) Las mejores prácticas son opcionales</label>
+                  <label><input type="radio" name="q1" value="c"> C) Los comentarios son siempre necesarios</label>
+                </div>
+                <div class="question">
+                  <h6>2. ¿Qué herramienta se usa típicamente para linting en JavaScript?</h6>
+                  <label><input type="radio" name="q2" value="a"> A) ESLint</label>
+                  <label><input type="radio" name="q2" value="b"> B) Pylint</label>
+                  <label><input type="radio" name="q2" value="c"> C) JSLint</label>
+                </div>
+                <div class="question">
+                  <h6>3. ¿Cuál de los siguientes es un code smell común?</h6>
+                  <label><input type="radio" name="q3" value="a"> A) Funciones largas</label>
+                  <label><input type="radio" name="q3" value="b"> B) Variables bien nombradas</label>
+                  <label><input type="radio" name="q3" value="c"> C) Documentación actualizada</label>
+                </div>
+                <div class="question">
+                  <h6>4. ¿Qué significa "refactor" en el desarrollo de software?</h6>
+                  <label><input type="radio" name="q4" value="a"> A) Mejorar la estructura sin cambiar el comportamiento</label>
+                  <label><input type="radio" name="q4" value="b"> B) Reescribir el código desde cero</label>
+                  <label><input type="radio" name="q4" value="c"> C) Eliminar funcionalidades</label>
+                </div>
+                <div class="question">
+                  <h6>5. ¿Por qué es importante la mantenibilidad del código?</h6>
+                  <label><input type="radio" name="q5" value="a"> A) Facilita futuras modificaciones</label>
+                  <label><input type="radio" name="q5" value="b"> B) Solo afecta al rendimiento</label>
+                  <label><input type="radio" name="q5" value="c"> C) No es relevante</label>
+                </div>
+              </div>
+              <p class="source-note">Fuente: clean code guidelines, code quality best practices, linting tools</p>
+            </div>
+
+          <div class="topic">
+            <h4>Revisiones de Código</h4>
+            <p>Procesos efectivos de revisión de código: checklists, constructivo feedback, pull request guidelines, minimum reviewers, automated checks. Code review mejora calidad y comparte conocimiento en el equipo.</p>
+          </div>
+          <div class="exam">
+            <h5>Examen: Revisiones de Código</h5>
+            <p>Responde las siguientes preguntas:</p>
+            <div class="questions">
+              <div class="question">
+                <h6>1. ¿Cuál es el propósito principal de una revisión de código?</h6>
+                <label><input type="radio" name="q1" value="a"> A) Encontrar errores y mejorar calidad</label>
+                <label><input type="radio" name="q1" value="b"> B) Aprobar el código automáticamente</label>
+                <label><input type="radio" name="q1" value="c"> C) Reducir la cantidad de código</label>
+              </div>
+              <div class="question">
+                <h6>2. ¿Qué se debe incluir en una checklist de revisión de código?</h6>
+                <label><input type="radio" name="q2" value="a"> A) Estilo, seguridad, duplicados, tests</label>
+                <label><input type="radio" name="q2" value="b"> B) Solo errores de sintaxis</label>
+                <label><input type="radio" name="q2" value="c"> C) Solo nombre de variables</label>
+              </div>
+              <div class="question">
+                <h6>3. ¿Cuántos revisores mínimos se recomiendan típicamente?</h6>
+                <label><input type="radio" name="q3" value="a"> A) Al menos 2</label>
+                <label><input type="radio" name="q3" value="b"> B) Solo 1</label>
+                <label><input type="radio" name="q3" value="c"> C) 5 o más</label>
+              </div>
+              <div class="question">
+                <h6>4. ¿Qué tipo de feedback es más efectivo en revisiones de código?</h6>
+                <label><input type="radio" name="q4" value="a"> A) Constructivo y específico</label>
+                <label><input type="radio" name="q4" value="b"> B) Crítico y negativo</label>
+                <label><input type="radio" name="q4" value="c"> C) Sin comentarios</label>
+              </div>
+              <div class="question">
+                <h6>5. ¿Cuál es el beneficio principal de las revisiones de código?</h6>
+                <label><input type="radio" name="q5" value="a"> A> Compartir conocimiento en el equipo</label>
+                <label><input type="radio" name="q5" value="b"> B) Reemplazar el testing</label>
+                <label><input type="radio" name="q5" value="c"> C) Acelerar el despliegue</label>
+              </div>
+            </div>
+            <p class="source-note">Fuente: code review best practices, PR guidelines, equipo colaboración</p>
+          </div>
+
+          <div class="topic">
+            <h4>Métricas y KPIs</h4>
+            <p>Medir la salud del software y del equipo: lead time, cycle time, deployment frequency, mean time to recovery (MTTR), defect rate, test coverage, technical debt ratio. DORA metrics para elite performers.</p>
+          </div>
+          <div class="exam">
+            <h5>Examen: Métricas y KPIs</h5>
+            <p>Responde las siguientes preguntas:</p>
+            <div class="questions">
+              <div class="question">
+                <h6>1. ¿Qué mide el lead time en DORA metrics?</h6>
+                <label><input type="radio" name="q1" value="a"> A) Tiempo desde el commit hasta el despliegue</label>
+                <label><input type="radio" name="q1" value="b"> B) Tiempo desde la idea hasta el código</label>
+                <label><input type="radio" name="q1" value="c"> C) Tiempo de recuperación de errores</label>
+              </div>
+              <div class="question">
+                <h6>2. ¿Qué mide el cycle time?</h6>
+                <label><input type="radio" name="q2" value="a"> A) Tiempo desde que se empieza a trabajar en un ítem hasta que está listo</label>
+                <label><input type="radio" name="q2" value="b"> B) Tiempo de compilación</label>
+                <label><input type="radio" name="q2" value="c"> C) Tiempo de diseño</label>
+              </div>
+              <div class="question">
+                <h6>3. ¿Con qué frecuencia deberían desplegarse los elite performers?</h6>
+                <label><input type="radio" name="q3" value="a"> A> Múltiples veces al día</label>
+                <label><input type="radio" name="q3" value="b"> B) Una vez por semana</label>
+                <label><input type="radio" name="q3" value="c"> C) Una vez por mes</label>
+              </div>
+              <div class="question">
+                <h6>4. ¿Qué mide el MTTR?</h6>
+                <label><input type="radio" name="q4" value="a"> A) Mean Time To Recovery</label>
+                <label><input type="radio" name="q4" value="b"> B) Mean Time To Release</label>
+                <label><input type="radio" name="q4" value="c"> C) Mean Total Test Results</label>
+              </div>
+              <div class="question">
+                <h6>5. ¿Qué mide la test coverage?</h6>
+                <label><input type="radio" name="q5" value="a"> A) Porcentaje de código cubierto por tests</label>
+                <label><input type="radio" name="q5" value="b"> B) Cobertura de requisitos</label>
+                <label><input type="radio" name="q5" value="c"> C) Cobertura de documentación</label>
+              </div>
+            </div>
+            <p class="source-note">Fuente: DORA metrics, software engineering metrics, elite performance research</p>
+          </div>
+
+          <div class="topic">
+            <h4>Legado y Mantenimiento</h4>
+            <p>Estrategias para mantener y modernizar software legado: strangler fig pattern, incremental refactoring, dependency updates, technical debt paydown, system redesign cuando necesario. Legacy code requiere paciencia y estrategia.</p>
+          </div>
+          <div class="exam">
+            <h5>Examen: Legado y Mantenimiento</h5>
+            <p>Responde las siguientes preguntas:</p>
+            <div class="questions">
+              <div class="question">
+                <h6>1. ¿Qué patrón se usa para modernizar software legado sin reescribirlo completo?</h6>
+                <label><input type="radio" name="q1" value="a"> A) Strangler fig pattern</label>
+                <label><input type="radio" name="q1" value="b"> B) Fig pattern</label>
+                <label><input type="radio" name="q1" value="c"> C) Butterfly pattern</label>
+              </div>
+              <div class="question">
+                <h6>2. ¿Qué es el refactoring incremental?</h6>
+                <label><input type="radio" name="q2" value="a"> A) Mejoras pequeñas y continuas</label>
+                <label><input type="radio" name="q2" value="b"> B) Reescribir el código desde cero</label>
+                <label><input type="radio" name="q2" value="c"> C) No refactorizar nunca</label>
+              </div>
+              <div class="question">
+                <h6>3. ¿Qué se actualiza typicalmente en el mantenimiento de legado?</h6>
+                <label><input type="radio" name="q3" value="a"> A> Dependencias y frameworks</label>
+                <label><input type="radio" name="q3" value="b"> B) Solo la interfaz de usuario</label>
+                <label><input type="radio" name="q3" value="c"> C) Solo la base de datos</label>
+              </div>
+              <div class="question">
+                <h6>4. ¿Cuál es el objetivo del paydown de deuda técnica?</h6>
+                <label><input type="radio" name="q4" value="a"> A) Reducir la deuda de manera incremental</label>
+                <label><input type="radio" name="q4" value="b"> B) Eliminar todo el código antiguo</label>
+                <label><input type="radio" name="q4" value="c"> C) Aumentar las funcionalidades</label>
+              </div>
+              <div class="question">
+                <h6>5. ¿Cuándo es necesario un rediseño del sistema?</h6>
+                <label><input type="radio" name="q5" value="a"> A) Cuando la tecnología está obsoleta</label>
+                <label><input type="radio" name="q5" value="b"> B) Cuando el código es perfecto</label>
+                <label><input type="radio" name="q5" value="c"> C) Nunca</label>
+              </div>
+            </div>
+            <p class="source-note">Fuente: legacy modernization patterns, strangler fig, technical debt management</p>
+          </div>
+
+          <div class="topic">
+            <h4>Proyecto de Calidad Final</h4>
+            <p>Aplicar todos los conceptos de calidad vista en el curso a un proyecto real: establecimiento de métricas baseline, implementación de testing, refactorización, documentación, y medición de mejora. El proyecto demuestra dominio de prácticas de calidad.</p>
+          </div>
+          <div class="exam">
+            <h5>Examen: Proyecto de Calidad Final</h5>
+            <p>Responde las siguientes preguntas:</p>
+            <div class="questions">
+              <div class="question">
+                <h6>1. ¿Qué se establece en la fase baseline del proyecto?</h6>
+                <label><input type="radio" name="q1" value="a"> A) Métricas base actuales</label>
+                <label><input type="radio" name="q1" value="b"> B) Objetivos finales</label>
+                <label><input type="radio" name="q1" value="c"> C) Historico de commits</label>
+              </div>
+              <div class="question">
+                <h6>2. ¿Qué se implementa primero en el proyecto de calidad?</h6>
+                <label><input type="radio" name="q2" value="a"> A) Testing y métricas</label>
+                <label><input type="radio" name="q2" value="b"> B) Documentación final</label>
+                <label><input type="radio" name="q2" value="c"> C) Rediseño completo</label>
+              </div>
+              <div class="question">
+                <h6>3. ¿Qué se refactoriza durante el proyecto?</h6>
+                <label><input type="radio" name="q3" value="a"> A) Estructura y calidad del código</label>
+                <label><input type="radio" name="q3" value="b"> B) Solo la interfaz de usuario</label>
+                <label><input type="radio" name="q3" value="c"> C) Solo la base de datos</label>
+              </div>
+              <div class="question">
+                <h6>4. ¿Qué se mide para demostrar mejora?</h6>
+                <label><input type="radio" name="q4" value="a"> A) Comparación de métricas baseline vs final</label>
+                <label><input type="radio" name="q4" value="b"> B) Solo la satisfacción del equipo</label>
+                <label><input type="radio" name="q4" value="c"> C) Solo el número de bugs</label>
+              </div>
+              <div class="question">
+                <h6>5. ¿Qué demina el proyecto final de calidad?</h6>
+                <label><input type="radio" name="q5" value="a"> A> Dominio de prácticas de calidad</label>
+                <label><input type="radio" name="q5" value="b"> B) Uso de tecnologías específicas</label>
+                <label><input type="radio" name="q5" value="c"> C) Finalización rápida</label>
+              </div>
+            </div>
+            <p class="source-note">Fuente: proyecto de calidad integral, aplicación de mejores prácticas, medición de mejora</p>
+          </div>
+
+    <!-- FASE 5: Arquitectura de Software -->
+    <div class="card">
+      <div class="card-header">
+        <h3>FASE 5: Arquitectura de Software</h3>
+      </div>
+      <div class="card-body">
+        <div class="section">
+          <div class="topic">
+            <h4>Fundamentos de Clean Architecture NUEVO</h4>
+            <p>Diseñar arquitecturas de software mantenibles y escalables con Clean Architecture, reducir acoplamiento, separar responsabilidades y facilitar evolución y testing del código. Principio de que las reglas de negocio deben estar separadas de detalles de frameworks, bases de datos y UI. Las capas desde el núcleo hacia afuera: Entities, Use Cases, Interface Adapters, Frameworks & Drivers.</p>
+          </div>
+          <div class="exam">
+            <h5>Examen: Fundamentos de Clean Architecture NUEVO</h5>
+            <p>Responde las siguientes preguntas:</p>
+            <div class="questions">
+              <div class="question">
+                <h6>1. ¿Cuál es el principio fundamental de Clean Architecture respecto a las reglas de negocio?</h6>
+                <label><input type="radio" name="q1" value="a"> A) Las reglas de negocio deben estar separadas de detalles de frameworks, bases de datos y UI</label>
+                <label><input type="radio" name="q1" value="b"> B) Las reglas de negocio deben estar acopladas a frameworks</label>
+                <label><input type="radio" name="q1" value="c"> C) Las reglas de negocio dependen de la UI</label>
+              </div>
+              <div class="question">
+                <h6>2. ¿En qué orden se organizan las capas de Clean Architecture desde el núcleo hacia afuera?</h6>
+                <label><input type="radio" name="q2" value="a"> A) Entities, Use Cases, Interface Adapters, Frameworks & Drivers</label>
+                <label><input type="radio" name="q2" value="b"> B) Frameworks & Drivers, Interface Adapters, Use Cases, Entities</label>
+                <label><input type="radio" name="q2" value="c"> C) Use Cases, Entities, Frameworks & Drivers, Interface Adapters</label>
+              </div>
+              <div class="question">
+                <h6>3. ¿Qué son las Entities en Clean Architecture?</h6>
+                <label><input type="radio" name="q3" value="a"> A) Objetos que contain business rules</label>
+                <label><input type="radio" name="q3" value="b"> B) Capa de presentación</label>
+                <label><input type="radio" name="q3" value="c"> C) Base de datos tables</label>
+              </div>
+              <div class="question">
+                <h6>4. ¿Para qué sirven los Interface Adapters?</h6>
+                <label><input type="radio" name="q4" value="a"> A) Convertir datos entre formatos y comunicarse con outer layers</label>
+                <label><input type="radio" name="q4" value="b"> Diseñar la UI</label>
+                <label><input type="radio" name="q4" value="c"> Almacenar datos</label>
+              </div>
+              <div class="question">
+                <h6>5. ¿Qué son los Frameworks & Drivers?</h6>
+                <label><input type="radio" name="q5" value="a"> A) Herramientas y detalles de implementación (frameworks, bases de datos, UI)</label>
+                <label><input type="radio" name="q5" value="b"> El núcleo del negocio</label>
+                <label><input type="radio" name="q5" value="c"> Patrones de diseño</label>
+              </div>
+            </div>
+            <p class="source-note">Fuente: Clean Architecture, Robert C. Martin, diseño de software mantenible</p>
+          </div>
+
+          <div class="topic">
+            <h4>Ejemplo Guiado: Préstamo de Biblioteca NUEVO</h4>
+            <p>Aplicar Clean Architecture en caso práctico completo: diseñar dominio (entities), casos de uso (use cases), ports y adapters (interfaces), integrar persistencia (repositories), HTTP (controllers/presenters) y tests (unitarios, integration). Ejemplo del mundo real: sistema de gestión de préstamos.</p>
+          </div>
+          <div class="exam">
+            <h5>Examen: Ejemplo Guiado: Préstamo de Biblioteca NUEVO</h5>
+            <p>Responde las siguientes preguntas:</p>
+            <div class="questions">
+              <div class="question">
+                <h6>1. ¿Qué problema resuelve el patrón Clean Architecture en el ejemplo del préstamo de biblioteca?</h6>
+                <label><input type="radio" name="q1" value="a"> A) Acoplamiento entre negocio y detalles de implementación</label>
+                <label><input type="radio" name="q1" value="b"> B) Falta de dominio</label>
+                <label><input type="radio" name="q1" value="c"> C) Diseño visual</label>
+              </div>
+              <div class="question">
+                <h6>2. ¿Qué son los casos de uso en Clean Architecture?</h6>
+                <label><input type="radio" name="q2" value="a"> A) Orchestration of business rules</label>
+                <label><input type="radio" name="q2" value="b"> Datos de la base de datos</label>
+                <label><input type="radio" name="q2" value="c"> Elementos de la UI</label>
+              </div>
+              <div class="question">
+                <h6>3. ¿Qué son los ports en Clean Architecture?</h6>
+                <label><input type="radio" name="q3" value="a"> A) Interfaces de contrato para comunicación</label>
+                <label><input type="radio" name="q3" value="b"> Implementaciones concretas</label>
+                <label><input type="radio" name="q3" value="c"> Elementos de la UI</label>
+              </div>
+              <div class="question">
+                <h6>4. ¿Qué son los adapters en Clean Architecture?</h6>
+                <label><input type="radio" name="q4" value="a"> A) Conversión de datos entre formatos</label>
+                <label><input type="radio" name="q4" value="b"> Lógica de negocio</label>
+                <label><input type="radio" name="q4" value="c"> Elementos de base de datos</label>
+              </div>
+              <div class="question">
+                <h6>5. ¿Cuál es el beneficio principal de aplicar Clean Architecture en un proyecto real?</h6>
+                <label><input type="radio" name="q5" value="a"> A) Software mantenible y escalable</label>
+                <label><input type="radio" name="q5" value="b"> C más rápido desarrollo inicial</label>
+                <label><input type="radio" name="q5" value="c"> C) Menor necesidad de testing</label>
+              </div>
+            </div>
+            <p class="source-note">Fuente: Clean Architecture case studies, software design patterns</p>
+          </div>
+          <div class="exam">
+            <h5>Examen: Reto: Aprobación de Gastos y Solución NUEVO</h5>
+            <p>Responde las siguientes preguntas:</p>
+            <div class="questions">
+              <div class="question">
+                <h6>1. ¿Qué se modelo en el reto de aprobación de gastos?</h6>
+                <label><input type="radio" name="q1" value="a"> A) Reglas de negocio (approve expense, reject expense, get expense status)</label>
+                <label><input type="radio" name="q1" value="b"> B) Diseño visual de la interfaz</label>
+                <label><input type="radio" name="q1" value="c"> C) Configuración de servidores</label>
+              </div>
+              <div class="question">
+                <h6>2. ¿Qué son los casos de uso en Clean Architecture?</h6>
+                <label><input type="radio" name="q2" value="a"> A) Orchestration of business rules</label>
+                <label><input type="radio" name="q2" value="b"> Datos de la base de datos</label>
+                <label><input type="radio" name="q2" value="c"> Elementos de la UI</label>
+              </div>
+              <div class="question">
+                <h6>3. ¿Qué son los ports en Clean Architecture?</h6>
+                <label><input type="radio" name="q3" value="a"> A) Interfaces de contrato para comunicación</label>
+                <label><input type="radio" name="q3" value="b"> Implementaciones concretas</label>
+                <label><input type="radio" name="q3" value="c"> Elementos de la UI</label>
+              </div>
+              <div class="question">
+                <h6>4. ¿Qué son los adapters en Clean Architecture?</h6>
+                <label><input type="radio" name="q4" value="a"> A) Conversión de datos entre formatos</label>
+                <label><input type="radio" name="q4" value="b"> Lógica de negocio</label>
+                <label><input type="radio" name="q4" value="c"> Elementos de base de datos</label>
+              </div>
+              <div class="question">
+                <h6>5. ¿Cuál es el objetivo principal del reto de aprobación de gastos?</h6>
+                <label><input type="radio" name="q5" value="a"> A) Diseñar un sistema de aprobación con Clean Architecture</label>
+                <label><input type="radio" name="q5" value="b"> B) Crear una base de datos</label>
+                <label><input type="radio" name="q5" value="c"> C) Desarrollar una interfaz de usuario</label>
+              </div>
+            </div>
+            <p class="source-note">Fuente: Clean Architecture case studies, software design patterns</p>
+          </div>
+
+    <!-- FASE 5: Arquitectura de Software -->
+            <p>Aplicar Clean Architecture en reto práctico de aprobación de gastos: modelar reglas de negocio (business rules), casos de uso (approve expense, reject expense, get expense status), ports y adapters, y validar solución con tests y mejoras orientadas a producción. Ejemplo: sistema de aprobación de gastos corporativos.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- FASE 6: Flujo con IA -->
+    <div class="card">
+      <div class="card-header">
+        <h3>FASE 6: Flujo de Desarrollo con IA</h3>
+      </div>
+      <div class="card-body">
+        <div class="section">
+          <div class="topic">
+            <h4>Desarrollo de Software en la Era de los Agentes NUEVO</h4>
+            <p>IA transformando el desarrollo de software, de asistencia puntual a agentes capaces de investigar, planificar, implementar y validar de forma autónoma. Anatomía de estos agentes: Reasoning (pensar), Acting (usar herramientas), Observing (ver resultados), Memory (retained context). Riesgos: alucinaciones, bucles infinitos, uso indebido de herramientas. Enfoque seguro: límites definidos, human-in-the-loop, evaluaciones de seguridad, monitoring de ejecuciones. Los agentes pueden ser verticales (casos de uso específicos) o horizontales (generalistas).</p>
+            <div class="objectives">
+              <h5>Deberías saber (basado en LangChain docs, arxiv papers on agentic RAG, Microsoft research, LangGraph):</h5>
+              <ul>
+                <li>De asistencia puntual a agentes autónomos: evolución de Copilot suggestions (autocomplete) a sistemas que pueden planificar, ejecutar iterativamente y tomar decisiones (agentes planificadores, reasoning engines)</li>
+                <li>Anatomía de agentes: Reasoning (pensar/planificar qué hacer), Acting (usar herramientas/llamar APIs/ejecutar código), Observing (ver resultados/observar output), Memory (memoria de contexto a corto y largo plazo, session memory, persistencia)</li>
+                <li>Patrones ReAct (Reasoning + Acting): bucle Thought → Action → Observation → que agentes iteran hasta resolver (el patrón estándar de la industria)</li>
+                <li>Riesgos: agentes que se salen de pista (off-track agents), bucles infinitos (infinite loops), uso indebido de herramientas (misuse of tools), costos computacionales inesperados (unexpected compute costs)</li>
+                <li>Enfoque seguro: límites definidos (tool use boundaries, scope restrictions), human-in-the-loop (approval nodes, manual gates), evaluaciones de seguridad (security audits, red teaming), monitoring de ejecuciones (execution monitoring, observability, logging)</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="topic">
+            <h4>Contexto, Capacidades y Extensiones para Agentes NUEVO</h4>
+            <p>Diseñar entorno que necesitan los agentes para trabajar eficazmente: contexto, instrucciones, herramientas, permisos y mecanismos de validación. AGENTS.md, Agent Skills, agentes personalizados y MCP, e integrar estos elementos en un agent harness completo para proyecto real. El contexto incluye system prompt, few-shot examples, tool definitions, y más.</p>
+            <div class="objectives">
+              <h5>Deberías saber (basado en LangGraph docs, MCP specification, LangChain best practices, AutoGen):</h5>
+              <ul>
+                <li>AGENTS.md: documentación estándar que describe las skills, herramientas y configuración de un agente (formato markdown, descripción de herramientas, variables de entorno, ejemplos)</li>
+                <li>Agent Skills: capacidades específicas que un agente puede ejecutar (búsqueda web, cálculo, archivo, API calls, database queries, file operations, system operations)</li>
+                <li>MCP (Model Context Protocol): estandarización cómo los agentes acceden y comparten contexto con herramientas y memoria (protocol specification, message format, tool definitions)</li>
+                <li>Contexto necesario: system prompts (instrucciones del sistema), few-shot examples (ejemplos few-shot para training), memoria a corto/ largo plazo (working memory, long-term memory, vector store for context)</li>
+                <li>Extensiones: custom tools (herramientas personalizadas, API integrations, database access), integrations with external services (Slack, email, CRM, ERP), file system operations</li>
+                <li>Agent harness: framework para ejecutar agentes con checkpointing (guardar estado), rewind (rewind to previous state), persistence (persistent storage, database), observability (logging, metrics, tracing)</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="topic">
+            <h4>Integración de APIs y Plataformas IA Populares NUEVO</h4>
+            <p>Integrar APIs de IA en aplicaciones reales: gestionar autenticación, seguridad, costes y errores. Trabajar con OpenAI, Anthropic, Gemini y OpenRouter mediante talleres prácticos y aprender a elegir el proveedor más adecuado según sus capacidades, costes y resiliencia. Costos por token varían drásticamente entre proveedores.</p>
+            <div class="objectives">
+              <h5>Deberías saber (basado en proveedor docs, pricing comparatives, industry adoption):</h5>
+              <ul>
+                <li>OpenAI API: modelos (gpt-4o, gpt-4o-mini, gpt-3.5-turbo, gpt-4, gpt-4-turbo), pricing por token (varía de $0.001 a $0.06 por 1K tokens dependiendo del modelo), rate limits (tokens por minuto, tokens por día), best practices (efficient prompting, caching, batch processing)</li>
+                <li>Anthropic Claude: modelos (claude-3-opus-20240229, claude-3-sonnet-20240229, claude-3-haiku-20240307), focus en seguridad y refusals útiles (rehusals to harmful requests), pricing (mid-range), contexto largo ventajas (100K+ tokens en algunos modelos)</li>
+                <li>Google Gemini: modelos 1.5 Flash/Pro, integración con Google AI Studio, pricing y contexto largo ventajas (1M+ tokens en Gemini 1.5 Pro), mejores para tareas multilingües, funciónarias</li>
+                <li>OpenRouter: agregador de múltiples proveedores, routing a diferentes modelos mediante una sola API, comparar precios y capacidades unificadas, acceso a modelos menores y nicho</li>
+                <li>Gestión de autenticación: API keys (environment variables, secret management), OAuth 2.0, rotación de keys, secret rotation policies</li>
+                <li>Control de costes: token counting (tiktoken para OpenAI, recuento de tokens), request monitoring (dashboard, alerts), establecer presupuestos (budget alerts, spending limits), elegir modelo eficiente para tarea (modelo más barato que cumpla requirements)</li>
+                <li>Manejo de errores: retry logic (exponential backoff, jitter), fallback models (modelos alternativos cuando falla el primary), graceful degradation (degradación elegante, funcionalidad reducida pero operativa)</li>
+              </ul>
+            </div>
+            <p class="source-note">Fuente: proveedor documentation (OpenAI, Anthropic, Google, OpenRouter), tiktoken documentation, industry pricing comparisons, OpenRouter docs</p>
+          </div>
+
+          <div class="topic">
+            <h4>Integración de APIs y Plataformas IA Populares (Optativo) NUEVO</h4>
+            <p>Integrar ElevenLabs para incorporar capacidades de audio, voz y agentes de IA en aplicaciones. Taller práctico: desarrollar una aplicación de audio o un agente de voz. ElevenLabs ofrece voices realistas con clonación de voz y síntesis de habla.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Business Cases -->
+    <div class="card">
+      <div class="card-header">
+        <h3>Business Cases con Referentes del Sector</h3>
+      </div>
+      <div class="card-body">
+        <p>Profesionales que han impulsado a marcas líderes explican las estrategias detrás de su éxito. Casos reales de Microsoft, Google, Salesforce, EA Games, Inditex, Cabify, Fintonic, SNGULAR y otras. Estos casos demuestran cómo la IA se aplica estratégicamente en entornos empresariales reales para generar valor, mejorar productos y optimizar procesos. Los business cases incluyen ROI, time-to-market reducido, mejora en satisfacción del cliente, y otros KPIs empresariales.</p>
+      </div>
+    </div>
+
+    <!-- Pie -->
+    <div style="text-align: center; margin-top: 50px; color: var(--text-light); font-size: 0.9rem;">
+      <p>Material de estudio para Máster en Desarrollo con IA - BigSchool</p>
+      <p>Doble titulación: BIG school + Universidad Isabel I (16 ECTS)</p>
+      <p>Acceso vitalicio | Actualizaciones constantes | Grupo Discord privado</p>
+      <p>Repositorio Opencode: OneDrive\Documentos\Repos\opencode\Opencode-Master-IA</p>
+    </div>
+  </div>
+</body>
+</html>
